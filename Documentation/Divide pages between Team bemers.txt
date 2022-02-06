@@ -1,0 +1,47 @@
+-------------------------------------------------------------------
+Alisha Cole
+-------------------------------------------------------------------
+Admin CRUD operations - admin_CRUD.php 
+https://www.studentstutorial.com/php/php-crud.php
+
+Admin login - admin_login.php
+
+Header - header.php
+
+Footer - footer.php
+
+about_us
+
+--------------------------------------------------------------------
+Carel Du Plessis
+--------------------------------------------------------------------
+Display Property for users - index.php
+
+User login - user_login.php
+
+Wishlist CRUD operations - Wishlist.php 
+https://www.studentstutorial.com/php/php-crud.php 
+
+User Sign Up - user_SignUp.php  
+
+Contact_us 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

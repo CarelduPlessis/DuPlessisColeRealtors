@@ -1,0 +1,489 @@
+﻿INSERT INTO Admin_TB (Admin_id, AdminName, AdminPassword, AdminEmail, AdminAvatar, IsAdmin_loggedIn)
+VALUES (0, 'Isabella Brown', '90a2c5abebfb978e725079be6505bf2a', 'Isabella@gmail.com', 'img/avatar/default-avatar2.png', 'FALSE');
+
+INSERT INTO Admin_TB (Admin_id, AdminName, AdminPassword, AdminEmail, AdminAvatar, IsAdmin_loggedIn)
+VALUES (0, 'William Johnson', 'b83d54741853354be04a23ef13a06b3e', 'William@gmail.com', 'img/avatar/default-avatar2.png', 'FALSE');
+
+INSERT INTO Admin_TB (Admin_id, AdminName, AdminPassword, AdminEmail, AdminAvatar, IsAdmin_loggedIn)
+VALUES (0, 'Gemma Lewell', '8b5d58a7c8cb699c6537445bd9f43e7b', 'Gemma@gmail.com', 'img/avatar/default-avatar2.png', 'FALSE');
+
+INSERT INTO Admin_TB (Admin_id, AdminName, AdminPassword, AdminEmail, AdminAvatar, IsAdmin_loggedIn)
+VALUES (0, 'Neil Archer', '4504f124260303b29ae3118ec390062c', 'Neil@gmail.com', 'img/avatar/default-avatar2.png', 'FALSE');
+
+INSERT INTO Admin_TB (Admin_id, AdminName, AdminPassword, AdminEmail, AdminAvatar, IsAdmin_loggedIn)
+VALUES (0, 'Oliver Walker', '77137d4916381817a2a25369e1934dfc', 'Oliver@gmail.com', 'img/avatar/default-avatar2.png', 'FALSE');
+
+INSERT INTO Admin_TB (Admin_id, AdminName, AdminPassword, AdminEmail, AdminAvatar, IsAdmin_loggedIn)
+VALUES (0, 'Michelle Pickering', '4f689290b5cac05e29b2851beef83284', 'Michelle@gmail.com', 'img/avatar/default-avatar2.png', 'FALSE');
+
+
+
+INSERT INTO User_TB (User_id, UserName, UserPassword, UserEmail, UserAvatar, IsUser_loggedIn)
+VALUES (0, 'James Walsh', '0655a4ccece5bddebfba26ac3e184478', 'james@gmail.com', 'img/avatar/default-avatar2.png', 'FALSE');
+
+INSERT INTO User_TB (User_id, UserName, UserPassword, UserEmail, UserAvatar, IsUser_loggedIn)
+VALUES (0, 'Mike Thomas', '0f4225caf9a560c646d54d2bb817360e', 'mike@gmail.com', 'img/avatar/default-avatar2.png', 'FALSE');
+
+INSERT INTO User_TB (User_id, UserName, UserPassword, UserEmail, UserAvatar, IsUser_loggedIn)
+VALUES (0, 'Bev Missen', '629c2bd16cb171a33d08538a8ee36fb0', 'Bev@gmail.com', 'img/avatar/default-avatar2.png', 'FALSE');
+
+INSERT INTO User_TB (User_id, UserName, UserPassword, UserEmail, UserAvatar, IsUser_loggedIn)
+VALUES (0, 'Hunter Walsh', '3d52c00bed0acdc920ea1992423fb18d', 'hunter@gmail.com', 'img/avatar/default-avatar2.png', 'FALSE');
+
+INSERT INTO User_TB (User_id, UserName, UserPassword, UserEmail, UserAvatar, IsUser_loggedIn)
+VALUES (0, 'Brian Alcock', 'e84db003a0dbdee4e4387f69e3bbb672', 'Brian@gmail.com', 'img/avatar/default-avatar2.png', 'FALSE');
+
+
+INSERT INTO Agent_TB (Agent_id, AgentFullName, AgentPhone, AgentEmail, AgentAvatar)
+VALUES (0, 'Charlotte Smith', 0215597193, 'Charlotte@gmail.com', 'img/avatar/agents/Charlotte.jpg');
+
+INSERT INTO Agent_TB (Agent_id, AgentFullName, AgentPhone, AgentEmail, AgentAvatar)
+VALUES (0, 'Oliver Wilson', 0214567894, 'Oliver@gmail.com', 'img/avatar/agents/Oliver.jpg');
+
+INSERT INTO Agent_TB (Agent_id, AgentFullName, AgentPhone, AgentEmail, AgentAvatar)
+VALUES (0, 'Jack Brown', 0234165847, 'Jack@gmail.com', 'img/avatar/agents/Jack.jpg');
+
+INSERT INTO Agent_TB (Agent_id, AgentFullName, AgentPhone, AgentEmail, AgentAvatar)
+VALUES (0, 'Noah Taylor', 0213167624, 'Noah@gmail.com', 'img/avatar/agents/Noah.jpg');
+
+INSERT INTO Agent_TB (Agent_id, AgentFullName, AgentPhone, AgentEmail, AgentAvatar)
+VALUES (0, 'Emily Taylor', 0274166884, 'Emily@gmail.com', 'img/avatar/agents/Emily.jpg');
+
+INSERT INTO Agent_TB (Agent_id, AgentFullName, AgentPhone, AgentEmail, AgentAvatar)
+VALUES (0, 'Mason Patel', 0263565834, 'Mason@gmail.com', 'img/avatar/agents/Mason.jpg');
+
+INSERT INTO Agent_TB (Agent_id, AgentFullName, AgentPhone, AgentEmail, AgentAvatar)
+VALUES (0, 'Leo King', 0244268191, 'Leo@gmail.com', 'img/avatar/agents/Leo.jpg');
+
+INSERT INTO Agent_TB (Agent_id, AgentFullName, AgentPhone, AgentEmail, AgentAvatar)
+VALUES (0, 'Ava Reid', 0234267799, 'Ava@gmail.com', 'img/avatar/agents/Ava.jpg');
+
+INSERT INTO Agent_TB (Agent_id, AgentFullName, AgentPhone, AgentEmail, AgentAvatar)
+VALUES (0, 'George Clark', 0211537397, 'George@gmail.com', 'img/avatar/agents/George.jpg');
+
+INSERT INTO Agent_TB (Agent_id, AgentFullName, AgentPhone, AgentEmail, AgentAvatar)
+VALUES (0, 'Ella Harris', 0224537695, 'Ella@gmail.com', 'img/avatar/agents/Ella.jpg');
+
+INSERT INTO Agent_TB (Agent_id, AgentFullName, AgentPhone, AgentEmail, AgentAvatar)
+VALUES (0, 'Tash Wayne', 0213265798, 'Tash@gmail.com', 'img/avatar/agents/Tash.jpg');
+
+INSERT INTO Agent_TB (Agent_id, AgentFullName, AgentPhone, AgentEmail, AgentAvatar)
+VALUES (0, 'Emma Taylor-Warne', 0213356878, 'Emma@gmail.com', 'img/avatar/agents/Emma.jpg');
+
+INSERT INTO Agent_TB (Agent_id, AgentFullName, AgentPhone, AgentEmail, AgentAvatar)
+VALUES (0, 'Matt ORourke', 0263547560, 'ORourke@gmail.com', 'img/avatar/agents/Matt.jpg');
+
+INSERT INTO Agent_TB (Agent_id, AgentFullName, AgentPhone, AgentEmail, AgentAvatar)
+VALUES (0, 'Erin Rush', 0294364814, 'Erin@gmail.com', 'img/avatar/agents/Erin.jpg');
+
+INSERT INTO Agent_TB (Agent_id, AgentFullName, AgentPhone, AgentEmail, AgentAvatar)
+VALUES (0, 'Jeremy Burrows', 0266537752, 'Jeremy@gmail.com', 'img/avatar/agents/Jeremy.jpg');
+
+INSERT INTO Agent_TB (Agent_id, AgentFullName, AgentPhone, AgentEmail, AgentAvatar)
+VALUES (0, 'Julie Hurley', 0213531862, 'Julie@gmail.com', 'img/avatar/agents/Julie.jpg');
+
+INSERT INTO Agent_TB (Agent_id, AgentFullName, AgentPhone, AgentEmail, AgentAvatar)
+VALUES (0, "Mark O'Loughlin", 0243527894, 'Mark@gmail.com', 'img/avatar/agents/Mark.jpg');
+
+INSERT INTO Agent_TB (Agent_id, AgentFullName, AgentPhone, AgentEmail, AgentAvatar)
+VALUES (0, 'Stevie Golding', 0291545943, 'Stevie@gmail.com', 'img/avatar/agents/Stevie.jpg');
+
+INSERT INTO Agent_TB (Agent_id, AgentFullName, AgentPhone, AgentEmail, AgentAvatar)
+VALUES (0, 'Urszula Bedggood', 0234876549, 'Urszula@gmail.com', 'img/avatar/agents/Urszula.jpg');
+
+        
+INSERT INTO PriceType_TB (PriceType_id, PriceType)             
+VALUES (0, 'Auction');
+
+INSERT INTO PriceType_TB (PriceType_id, PriceType)             
+VALUES (0, 'Tender');
+
+INSERT INTO PriceType_TB (PriceType_id, PriceType)             
+VALUES (0, 'Open Home');
+
+INSERT INTO PriceType_TB (PriceType_id, PriceType)             
+VALUES (0, 'Deadline sale');
+
+INSERT INTO PriceType_TB (PriceType_id, PriceType)             
+VALUES (0, 'Online');
+
+
+
+INSERT INTO PropertyRecord_TB (PropertyRecord_id, Min_Price, SoldFor, IsSold, IsBid, currentBid)             
+VALUES (0, '399000', '0', 'FALSE', 'FALSE', '0');
+
+INSERT INTO PropertyRecord_TB (PropertyRecord_id, Min_Price, SoldFor, IsSold, IsBid, currentBid)              
+VALUES (0, 698000, '0', 'FALSE', 'FALSE', '0');
+
+INSERT INTO PropertyRecord_TB (PropertyRecord_id, Min_Price, SoldFor, IsSold, IsBid, currentBid)             
+VALUES (0, '549000',  '549000', 'TRUE', 'FALSE', '0');
+
+INSERT INTO PropertyRecord_TB (PropertyRecord_id, Min_Price, SoldFor, IsSold, IsBid, currentBid)             
+VALUES (0, '600000',  '799000', 'TRUE', 'FALSE', '0');
+ 
+INSERT INTO PropertyRecord_TB (PropertyRecord_id, Min_Price, SoldFor, IsSold, IsBid, currentBid)             
+VALUES (0, '900000',  '0', 'FALSE', 'TRUE', '900000'); 
+
+INSERT INTO PropertyRecord_TB (PropertyRecord_id, Min_Price, SoldFor, IsSold, IsBid, currentBid)             
+VALUES (0, '800000',  '1000000', 'TRUE', 'TRUE', '1000000'); 
+
+INSERT INTO PropertyRecord_TB (PropertyRecord_id, Min_Price, SoldFor, IsSold, IsBid, currentBid)             
+VALUES (0, '479000',  '0', 'FALSE', 'FALSE', '0'); 
+
+INSERT INTO PropertyRecord_TB (PropertyRecord_id, Min_Price, SoldFor, IsSold, IsBid, currentBid)             
+VALUES (0, '519000',  '519000', 'TRUE', 'FALSE','0'); 
+
+INSERT INTO PropertyRecord_TB (PropertyRecord_id, Min_Price, SoldFor, IsSold, IsBid, currentBid)             
+VALUES (0, '345000',  '0', 'FALSE', 'FALSE', '0'); 
+
+INSERT INTO PropertyRecord_TB (PropertyRecord_id, Min_Price, SoldFor, IsSold, IsBid, currentBid)            
+VALUES (0, '475000',  '500000', 'TRUE', 'FALSE', '0'); 
+
+INSERT INTO PropertyRecord_TB (PropertyRecord_id, Min_Price, SoldFor, IsSold, IsBid, currentBid)
+VALUES (0, '600000', '0', 'FALSE', 'FALSE', '0');
+
+INSERT INTO PropertyRecord_TB (PropertyRecord_id, Min_Price, SoldFor, IsSold, IsBid, currentBid)
+VALUES (0, '840000', '0', 'FALSE', 'FALSE', '0');
+
+INSERT INTO PropertyRecord_TB (PropertyRecord_id, Min_Price, SoldFor, IsSold, IsBid, currentBid)
+VALUES (0, '700,000', '0', 'FALSE', 'TRUE', '650000');
+
+INSERT INTO PropertyRecord_TB (PropertyRecord_id, Min_Price, SoldFor, IsSold, IsBid, currentBid)
+VALUES (0, '569000', '0', 'FALSE', 'FALSE', '0');
+
+INSERT INTO PropertyRecord_TB (PropertyRecord_id, Min_Price, SoldFor, IsSold, IsBid, currentBid)
+VALUES (0, '789000', '0', 'FALSE', 'FALSE', '0');
+
+INSERT INTO PropertyRecord_TB (PropertyRecord_id, Min_Price, SoldFor, IsSold, IsBid, currentBid)
+VALUES (0, '859000', '0', 'FALSE', 'FALSE', '0');
+
+INSERT INTO PropertyRecord_TB (PropertyRecord_id, Min_Price, SoldFor, IsSold, IsBid, currentBid)
+VALUES (0, '399000', '0', 'FALSE', 'FALSE', '0');
+
+INSERT INTO PropertyRecord_TB (PropertyRecord_id, Min_Price, SoldFor, IsSold, IsBid, currentBid)
+VALUES (0, '739000', '0', 'FALSE', 'FALSE', '0');
+
+INSERT INTO PropertyRecord_TB (PropertyRecord_id, Min_Price, SoldFor, IsSold, IsBid, currentBid)
+VALUES (0, '780000', '0', 'FALSE', 'FALSE', '0');
+
+
+
+
+INSERT INTO PropertyCity_TB (PropertyCity_id, PropertyCity)
+VALUES (0, 'Hamilton');
+
+INSERT INTO PropertyCity_TB (PropertyCity_id, PropertyCity)
+VALUES (0, 'Auckland');
+
+INSERT INTO PropertyCity_TB (PropertyCity_id, PropertyCity)
+VALUES (0, 'Wellington');
+
+INSERT INTO PropertyCity_TB (PropertyCity_id, PropertyCity)
+VALUES (0, 'Christchurch');
+
+
+
+INSERT INTO PropertySuburb_TB (PropertySuburb_id, PropertySuburb)
+VALUES (0, 'Taupiri');
+
+INSERT INTO PropertySuburb_TB (PropertySuburb_id, PropertySuburb)
+VALUES (0, 'Silverdale');
+
+INSERT INTO PropertySuburb_TB (PropertySuburb_id, PropertySuburb)
+VALUES (0, 'Glenview');
+
+INSERT INTO PropertySuburb_TB (PropertySuburb_id, PropertySuburb)
+VALUES (0, 'Harrowfield');
+
+INSERT INTO PropertySuburb_TB (PropertySuburb_id, PropertySuburb)
+VALUES (0, 'Nawton');
+
+INSERT INTO PropertySuburb_TB (PropertySuburb_id, PropertySuburb)
+VALUES (0, 'Hamilton Central');
+
+INSERT INTO PropertySuburb_TB (PropertySuburb_id, PropertySuburb)
+VALUES (0, 'Hamilton East');
+
+INSERT INTO PropertySuburb_TB (PropertySuburb_id, PropertySuburb)
+VALUES (0, 'Dinsdale');
+
+INSERT INTO PropertySuburb_TB (PropertySuburb_id, PropertySuburb)
+VALUES (0, 'Glendene, Waitakere City');
+
+INSERT INTO PropertySuburb_TB (PropertySuburb_id, PropertySuburb)
+VALUES (0, 'Torbay');
+
+INSERT INTO PropertySuburb_TB (PropertySuburb_id, PropertySuburb)
+VALUES (0, 'Grey Lynn');
+
+INSERT INTO PropertySuburb_TB (PropertySuburb_id, PropertySuburb)
+VALUES (0, 'Miramar');
+
+INSERT INTO PropertySuburb_TB (PropertySuburb_id, PropertySuburb)
+VALUES (0, 'Wellington Central');
+
+INSERT INTO PropertySuburb_TB (PropertySuburb_id, PropertySuburb)
+VALUES (0, 'Khandallah');
+
+INSERT INTO PropertySuburb_TB (PropertySuburb_id, PropertySuburb)
+VALUES (0, 'Spreydon');
+
+INSERT INTO PropertySuburb_TB (PropertySuburb_id, PropertySuburb)
+VALUES (0, 'Halswell');
+
+INSERT INTO PropertySuburb_TB (PropertySuburb_id, PropertySuburb)
+VALUES (0, 'Prebbleton');
+
+
+
+INSERT INTO PropertyStreet_TB (PropertyStreet_ID, PropertyStreet)
+VALUES (0, '7 Watts Grove');
+
+INSERT INTO PropertyStreet_TB (PropertyStreet_ID, PropertyStreet)
+VALUES (0, '26/391 Victoria Street');
+
+INSERT INTO PropertyStreet_TB (PropertyStreet_ID, PropertyStreet)
+VALUES (0, '17 Pryce Place');
+
+INSERT INTO PropertyStreet_TB (PropertyStreet_ID, PropertyStreet)
+VALUES (0, '20 Te Tiireke Drive');
+
+INSERT INTO PropertyStreet_TB (PropertyStreet_ID, PropertyStreet)
+VALUES (0, '4 The Avenue');
+
+INSERT INTO PropertyStreet_TB (PropertyStreet_ID, PropertyStreet)
+VALUES (0, '123B Avalon Drive');
+
+INSERT INTO PropertyStreet_TB (PropertyStreet_ID, PropertyStreet)
+VALUES (0, '34 Bremworth Avenue');
+
+INSERT INTO PropertyStreet_TB (PropertyStreet_ID, PropertyStreet)
+VALUES (0, 'Lot 8, 18 Rothwell Street'); 
+
+INSERT INTO PropertyStreet_TB (PropertyStreet_ID, PropertyStreet)
+VALUES (0, '4/3 Inverness Avenue'); 
+
+INSERT INTO PropertyStreet_TB (PropertyStreet_ID, PropertyStreet)
+VALUES (0, '35a Southsea Crescent'); 
+
+
+INSERT INTO PropertyStreet_TB (PropertyStreet_ID, PropertyStreet)
+VALUES (0, '17 Temuri Place, Glendene');
+INSERT INTO PropertyStreet_TB (PropertyStreet_ID, PropertyStreet)
+VALUES (0, '286 Glenvar Rd');
+INSERT INTO PropertyStreet_TB (PropertyStreet_ID, PropertyStreet)
+VALUES (0, '9 Barrington Road');
+INSERT INTO PropertyStreet_TB (PropertyStreet_ID, PropertyStreet)
+VALUES (0, '119 Park Rd');
+INSERT INTO PropertyStreet_TB (PropertyStreet_ID, PropertyStreet)
+VALUES (0, '9/8b Chews Lane');
+INSERT INTO PropertyStreet_TB (PropertyStreet_ID, PropertyStreet)
+VALUES (0, '48 Clark Street');
+INSERT INTO PropertyStreet_TB (PropertyStreet_ID, PropertyStreet)
+VALUES (0, '34 Sugden Street');
+INSERT INTO PropertyStreet_TB (PropertyStreet_ID, PropertyStreet)
+VALUES (0, '2 Romanee Lane');
+INSERT INTO PropertyStreet_TB (PropertyStreet_ID, PropertyStreet)
+VALUES (0, '59 Charwell Lane');
+
+
+
+INSERT INTO PropertyPost_TB (PropertyPost_id, PropertyPost)
+VALUES (0, '3721'); 
+
+INSERT INTO PropertyPost_TB (PropertyPost_id, PropertyPost)
+VALUES (0, '3204'); 
+
+INSERT INTO PropertyPost_TB (PropertyPost_id, PropertyPost)
+VALUES (0, '3216'); 
+
+INSERT INTO PropertyPost_TB (PropertyPost_id, PropertyPost)
+VALUES (0, '3206'); 
+ 
+INSERT INTO PropertyPost_TB (PropertyPost_id, PropertyPost)
+VALUES (0, '3210'); 
+
+INSERT INTO PropertyPost_TB (PropertyPost_id, PropertyPost)
+VALUES (0, '3200'); 
+
+
+INSERT INTO PropertyPost_TB (PropertyPost_id, PropertyPost)
+VALUES (0, '0602');
+INSERT INTO PropertyPost_TB (PropertyPost_id, PropertyPost)
+VALUES (0, '0630');
+INSERT INTO PropertyPost_TB (PropertyPost_id, PropertyPost)
+VALUES (0, '1021');
+INSERT INTO PropertyPost_TB (PropertyPost_id, PropertyPost)
+VALUES (0, '6022');
+INSERT INTO PropertyPost_TB (PropertyPost_id, PropertyPost)
+VALUES (0, '6011');
+INSERT INTO PropertyPost_TB (PropertyPost_id, PropertyPost)
+VALUES (0, '6035');
+INSERT INTO PropertyPost_TB (PropertyPost_id, PropertyPost)
+VALUES (0, '8024');
+INSERT INTO PropertyPost_TB (PropertyPost_id, PropertyPost)
+VALUES (0, '8025');
+INSERT INTO PropertyPost_TB (PropertyPost_id, PropertyPost)
+VALUES (0, '8020');
+
+INSERT INTO OfficeCity_TB (OfficeCity_id, OfficeCity_City)
+VALUES (0, 'Hamilton');
+INSERT INTO OfficeCity_TB (OfficeCity_id, OfficeCity_City)
+VALUES (0, 'Auckland');
+INSERT INTO OfficeCity_TB (OfficeCity_id, OfficeCity_City)
+VALUES (0, 'Wellington');
+INSERT INTO OfficeCity_TB (OfficeCity_id, OfficeCity_City)
+VALUES (0, 'Christchurch');
+
+
+
+
+INSERT INTO OfficePost_TB (OfficePost_ID, OfficePost)
+VALUES (0, '3210');
+INSERT INTO OfficePost_TB (OfficePost_ID, OfficePost)
+VALUES (0, '3204');
+INSERT INTO OfficePost_TB (OfficePost_ID, OfficePost)
+VALUES (0, '3216');
+INSERT INTO OfficePost_TB (OfficePost_ID, OfficePost)
+VALUES (0, '1010');
+INSERT INTO OfficePost_TB (OfficePost_ID, OfficePost)
+VALUES (0, '6011');
+INSERT INTO OfficePost_TB (OfficePost_ID, OfficePost)
+VALUES (0, '8041');
+
+INSERT INTO OfficeStreet_TB (OfficeStreet_id, OfficeStreet)
+VALUES (0, '123 Chartwell Crescent');
+INSERT INTO OfficeStreet_TB (OfficeStreet_id, OfficeStreet)
+VALUES (0, '26/391 victoria street');
+INSERT INTO OfficeStreet_TB (OfficeStreet_id, OfficeStreet)
+VALUES (0, '51 York St');
+INSERT INTO OfficeStreet_TB (OfficeStreet_id, OfficeStreet)
+VALUES (0, '430 Queen St');
+INSERT INTO OfficeStreet_TB (OfficeStreet_id, OfficeStreet)
+VALUES (0, '27 Buller St');
+INSERT INTO OfficeStreet_TB (OfficeStreet_id, OfficeStreet)
+VALUES (0, '228/234 Riccarton Rd');
+	
+INSERT INTO OfficeSuburb_TB (OfficeSuburb_id, OfficeSuburb)
+VALUES (0, 'Chartwell');
+INSERT INTO OfficeSuburb_TB (OfficeSuburb_id, OfficeSuburb)
+VALUES (0, 'Hamilton Central');
+INSERT INTO OfficeSuburb_TB (OfficeSuburb_id, OfficeSuburb)
+VALUES (0, 'Hamilton East');
+INSERT INTO OfficeSuburb_TB (OfficeSuburb_id, OfficeSuburb)
+VALUES (0, ' Auckland CBD');
+INSERT INTO OfficeSuburb_TB (OfficeSuburb_id, OfficeSuburb)
+VALUES (0, 'Te Aro');
+INSERT INTO OfficeSuburb_TB (OfficeSuburb_id, OfficeSuburb)
+VALUES (0, 'Upper Riccarton');
+
+
+
+
+INSERT INTO Office_TB (Office_id, Office_Phone, Office_Email, OfficeStreet_id, OfficeSuburb_id, OfficeCity_id, OfficePost_id)
+VALUES (0, '07-563 8289', 'DuPlessisColeRealators.Hamilton@gmail.com', 1, 1, 1, 1);
+INSERT INTO Office_TB (Office_id, Office_Phone, Office_Email, OfficeStreet_id, OfficeSuburb_id, OfficeCity_id, OfficePost_id)
+VALUES (0, '07-412 8259', 'DuPlessisColeRealators.HamiltonCenter@gmail.com', 2, 2, 1, 2);
+INSERT INTO Office_TB (Office_id, Office_Phone, Office_Email, OfficeStreet_id, OfficeSuburb_id, OfficeCity_id, OfficePost_id)
+VALUES (0, '07-925 6140', 'DuPlessisColeRealators.HamiltonCenter@gmail.com', 3, 3, 1,  3);
+INSERT INTO Office_TB (Office_id, Office_Phone, Office_Email, OfficeStreet_id, OfficeSuburb_id, OfficeCity_id, OfficePost_id)
+VALUES (0, '09-300 5001', 'DuPlessisColeRealators.Auckland@gmail.com', 4, 4, 2, 4);
+INSERT INTO Office_TB (Office_id, Office_Phone, Office_Email, OfficeStreet_id, OfficeSuburb_id, OfficeCity_id, OfficePost_id)
+VALUES (0, '04-566 2233', 'DuPlessisColeRealators.Wellington@gmail.com', 5, 5, 3, 5);
+INSERT INTO Office_TB (Office_id, Office_Phone, Office_Email, OfficeStreet_id, OfficeSuburb_id, OfficeCity_id, OfficePost_id)
+VALUES (0, '03-423 9472', 'DuPlessisColeRealators.Christchurch@gmail.com', 6, 6, 4, 6);
+
+
+
+										   
+INSERT INTO Property_TB (Property_id, Agent_id, PropertyName, PropertyDescription, Brief, bedRoom, Garage, livingRoom, bathRoom, Size, Property_image, PropertyStreet_id, PropertySuburb_id, PropertyCity_id, PropertyPost_id, Admin_id, Office_id, PropertyRecord_id, PriceType_id)
+VALUES (0, 1, 'EXTENDED FAMILY OPTIONS OR SUPER SMART INVESTMENT',"This is a location to get excited about and an opportunity too good to miss.
+A classic 1950s brick home a short walk from Dio School and the Waikato River, featuring an adjoining self contained unit, ideal for a family member or additional income to help with the mortgage.
+The house and unit are both insulated to current standards and each features a heat pump. The main house is very comfortable with three good sized bedrooms, while the unit has a very sunny back terrace.
+The large 805:sqm section has a wide frontage and ample parking plus a double car port and single garage.
+Both properties currently have very good tenants and the joint return is $645 per week. The rent increases to $670 per week in early October.
+This really is real estate gold so call Phil on 021 108 6529 and let's make it yours.","This is a location to get excited about and an opportunity too good to miss. A classic 1950s brick home a short walk from Dio School and the Waikato River, featuring an adjoining self contained unit, ideal for a family member or additional income.......",3,2,1,1,428,'img/property/EXTENDED-FAMILY-OPTIONS-OR-SUPER-SMART-INVESTMENT.jpg',1,1,1,1,1,1,1,5);
+
+INSERT INTO Property_TB (Property_id, Agent_id, PropertyName, PropertyDescription, Brief, bedRoom, Garage, livingRoom, bathRoom, Size, Property_image, PropertyStreet_id, PropertySuburb_id, PropertyCity_id, PropertyPost_id, Admin_id, Office_id, PropertyRecord_id, PriceType_id)
+VALUES (0, 2, 'MAKE THE CITY YOUR PLAYGROUND', "For those craving an urban, inner city existence this apartment ticks all the boxes. Nestled in the heart of Victoria Street just moments from the best bars, eateries and entertainment that Hamilton has to offer is this fabulous two bedroom home. 
+The entire apartment has neutral decor meaning you can add your own flair with ease. The open plan kitchen and living area opens out to the spacious balcony which has sweeping views over the CBD towards the river. On the upper level, the two bedrooms are both generous, with the master having its own walk through wardrobe. 
+An additional room creates space for a second living option or workspace for the home-based earner or creative soul. 
+With a secure car space, separate laundry and the cosy convenience of a heatpump, the space is the ideal lock up and leave. The entire building has been recently refurbished and has a chic new look. Step out your front door and stroll into this vibrant, bustling city to your hearts content! Call James on 0273139170 to view.", "For those craving an urban, inner city existence this apartment ticks all the boxes. Nestled in the heart of Victoria Street just moments from the best bars, eateries and entertainment that Hamilton has to offer is this fabulous two bedroom home..........",2,2,1,1,98,'img/property/MAKE-THE-CITY-YOUR-PLAYGROUND.jpg',2,6,1,2,2,2,2,1);
+ 
+INSERT INTO Property_TB (Property_id, Agent_id, PropertyName, PropertyDescription, Brief, bedRoom, Garage, livingRoom, bathRoom, Size, Property_image, PropertyStreet_id, PropertySuburb_id, PropertyCity_id, PropertyPost_id, Admin_id, Office_id, PropertyRecord_id, PriceType_id)
+VALUES (0, 3, 'A BRICK BEAUTY', "This very tidy property has been well loved and maintained and in the same ownership since new. The home offers three double bedrooms, a large lounge with gas heating plus an open plan kitchen/dining that flows through to an all-weather conservatory. 
+What a great sunny spot to use as a second living while overlooking the large rear section- plenty of space for the boat, caravan and more. 
+Plus, theres single garaging with auto door- however if you want to leave the car at home its only a short walk to the local Silverdale Shopping Centre. 
+In zone for a range of sought-after schooling including Berkley Normal & Hillcrest High School and minutes to the Waikato University. 
+This is a great opportunity to step into the property market in this well-kept home. Simply move in, unpack and enjoy.","This very tidy property has been well loved and maintained and in the same ownership since new. The home offers three double bedrooms, a large lounge with gas heating plus an open plan kitchen/dining that flows through to an all-weather..........",3,1,1,1,835,'img/property/HARROWFIELD-ELEVATION-&-VIEWS.jpg',3,2,1,3,3,3,3,5);
+ 
+INSERT INTO Property_TB (Property_id, Agent_id, PropertyName, PropertyDescription, Brief, bedRoom, Garage, livingRoom, bathRoom, Size, Property_image, PropertyStreet_id, PropertySuburb_id, PropertyCity_id, PropertyPost_id, Admin_id, Office_id, PropertyRecord_id, PriceType_id)
+VALUES (0, 4, "DIXON HEIGHTS FITZROY - DON'T MISS THIS BEAUTY!","Enjoy this elevated two level home. Whether the expansive view of the strategically located family room or the upstairs lounge - this home should not be missed!
+This architecturally designed home, with its gourmet kitchen complimented with a spacious walk-in pantry and family room flowing out on to the sun drenched deck. 
+The master bedroom on the ground floor enjoys the access to the deck and the uninterrupted views. On the second level is three bedrooms, master bathroom and upstairs lounge. 
+This outstanding home with views to burn is awaiting its new family- call now don't miss out.","Enjoy this elevated two level home. Whether the expansive view of the strategically located family room or the upstairs lounge - this home should not be missed! This architecturally designed home.........",4,2,2,2,437, "img/property/DIXON-HEIGHTS-FITZROY-DON'T-MISS-THIS-BEAUTY!.jpg",4,3,1,4,4,2,4,3);
+
+INSERT INTO Property_TB (Property_id, Agent_id, PropertyName, PropertyDescription, Brief, bedRoom, Garage, livingRoom, bathRoom, Size, Property_image, PropertyStreet_id, PropertySuburb_id, PropertyCity_id, PropertyPost_id, Admin_id, Office_id, PropertyRecord_id, PriceType_id)
+VALUES (0, 5, 'HARROWFIELD ELEVATION & VIEWS','Just move in and enjoy this prime position in Harrowfield. Privately situated at the end of The Avenue with expansive views across the Waikato River to St Andrews and beyond. 
+This impressive single level 240m2 home has been designed to maximise privacy, space and views. Emphasis too on light and sunny living rooms adds to the very special feel of this Harrowfield home. Extensive paved off street parking is an excellent feature of the 840m2 site. The vendors currently park a large 9m camper vehicle with ease onsite without interruption to their views. 
+Numerous other features apply to this beautiful home. Contact the property agent Mike Thomas now to view for yourself on 0274975933',"Just move in and enjoy this prime position in Harrowfield. Privately situated at the end of The Avenue with expansive views across the Waikato River to St Andrews and beyond. 
+This impressive single level 240m2 home has been designed to maximise........",3,2,2,2,241,'img/property/HARROWFIELD-ELEVATION-&-VIEWS.jpg',5,4,1,5,5,1,5,1);
+
+INSERT INTO Property_TB (Property_id, Agent_id, PropertyName, PropertyDescription, Brief, bedRoom, Garage, livingRoom, bathRoom, Size, Property_image, PropertyStreet_id, PropertySuburb_id, PropertyCity_id, PropertyPost_id, Admin_id, Office_id, PropertyRecord_id, PriceType_id)
+VALUES (0, 6, 'We Are B, But Road Fronted','A great opportunity here to purchase this freestanding two-bedroom home. This home could suit a range of buyers - an investor, a first home or sizing down. The home is insulated, heating is by heat pump in the large lounge/dining area. Separate bathroom, shower over bath, separate toilet and laundry. 
+A short walk to local shops and bus stops. Situated in a cul-de-sac off Avalon Drive. Close to the Northern Motorway links, The Base Shopping Centre and business districts. Garaging is a standalone single garage and shed built by Skyline Garages. Currently rented at $310 per week with a property manager.
+Open Homes will be only on a Saturday 12-1 or strictly by appointment.
+Call John today for more information.',"A great opportunity here to purchase this freestanding two-bedroom home. This home could suit a range of buyers - an investor, a first home or sizing down. The home is insulated, heating is by heat pump in the large lounge/dining area..........",2,1,1,1,73,'img/property/We-Are-B,-But-Road-Fronted.jpg',6,5,1,6,3,2,6,1);
+
+INSERT INTO Property_TB (Property_id, Agent_id, PropertyName, PropertyDescription, Brief, bedRoom, Garage, livingRoom, bathRoom, Size, Property_image, PropertyStreet_id, PropertySuburb_id, PropertyCity_id, PropertyPost_id, Admin_id, Office_id, PropertyRecord_id, PriceType_id)
+VALUES (0, 7, 'SUNNY WITH SPACE TO GROW','This sweet home has so much to offer that you will have to view it to understand the potential. This two bedroom home is tidy and low maintenance, brick with aluminium joinery and a concrete tile roof. 
+It is situated on a large section that has untapped potential as well as having a wonderful aspect looking out to Bremworth Park. 
+Ideal at this price for first home buyers or investors, a great option for those down sizing or those that want some garden but also want the convenience of lock up and leave. Vendors say sell, phone Hamish to view today on 021 993250.','This sweet home has so much to offer that you will have to view it to understand the potential. This two bedroom home is tidy and low maintenance, brick with aluminium joinery and a concrete tile roof. 
+It is situated on a large section that has......',2,1,1,1,100,'img/property/SUNNY-WITH-SPACE-TO-GROW.jpg',7,8,1,2,1,2,7,3);
+
+INSERT INTO Property_TB (Property_id, Agent_id, PropertyName, PropertyDescription, Brief, bedRoom, Garage, livingRoom, bathRoom, Size, Property_image, PropertyStreet_id, PropertySuburb_id, PropertyCity_id, PropertyPost_id, Admin_id, Office_id, PropertyRecord_id, PriceType_id)
+VALUES (0, 8, "FIRST HOME BUYERS THIS IS FOR YOU!","Only 5% deposit required, be quick! Don't wait for this opportunity to go!!! You could be on the property ladder in no time, who doesn't want to own a home that is stylish, interior designed and constructed to a high quality by a certified kiwi builder?
+Rothwell Rise is being offered exclusively to first home buyers, these brand new two-bedroom homes have been designed with the needs of young trendy professionals in mind. Thoughtfully designed with an open plan kitchen, dining and living to create the heart of the home, the living area with the benefit of a ranch slider door located at the rear of the home which will be a delight to unwind from the working day in the afternoon sun. Single car garaging coming complete with a separate laundry nook, this is the perfect package for any first home buyer.
+Your brand new home will be super appealing with a stylish colour palate that has been carefully selected by an interior designer. Adding to the homes appeal is the convenient location, within five minutes of the CBD and a short walk to the Dinsdale Shopping Centre.
+By using your Kiwisaver and 'First Home Grant' you could potentially secure your own home with a deposit of just 5%, it maybe easier than you realise, check with your Bank, Mortgage Broker or Financial Institution to see if you meet the criteria. Talk to us today to discuss how we can help you get on the property ladder. Please copy and paste the link to discover more www.rothwellrise.co.nz", "Only 5% deposit required, be quick!
+Don't wait for this opportunity to go!!! You could be on the property ladder in no time, who doesn't want to own a home that is stylish, interior designed and constructed to a high quality by a certified............",2,1,1,1,75,"img/property/FIRST-HOME-BUYERS-THIS-IS-FOR-YOU!.jpg",8,8,1,2,6,2,8,5);
+
+INSERT INTO Property_TB (Property_id, Agent_id, PropertyName, PropertyDescription, Brief, bedRoom, Garage, livingRoom, bathRoom, Size, Property_image, PropertyStreet_id, PropertySuburb_id, PropertyCity_id, PropertyPost_id, Admin_id, Office_id, PropertyRecord_id, PriceType_id)
+VALUES (0, 9, 'INVEST IN INVERNESS','This is an exceptional opportunity to secure a super spacious one bedroom townhouse in a fabulous Waikato University location. Upstairs and incredibly private, it is a great entry into the booming Hamilton property market where there is an accommodation shortage and rental properties are under such pressure. 
+Open plan living gives it a great feeling of space and it opens seamlessly onto a large balcony providing extra space for tenants. Off street parking and a shed are an added bonus. 
+The existing tenants are keen to stay so that makes purchasing this property easy. Close to all levels of schooling and walking distance to the University. This will create good interest so early inspection is recommended - No open homes will be run on this property so give Sue 021745365 or Donna 021764405 a call to view.',"This is an exceptional opportunity to secure a super spacious one bedroom townhouse in a fabulous Waikato University location. Upstairs and incredibly private, it is a great entry into the booming Hamilton property market where there is an..............",2,0,1,1,60,'img/property/INVEST-IN-INVERNESS.jpg',9,7,1,3,2,3,9,5);
+
+INSERT INTO Property_TB (Property_id, Agent_id, PropertyName, PropertyDescription, Brief, bedRoom, Garage, livingRoom, bathRoom, Size, Property_image, PropertyStreet_id, PropertySuburb_id, PropertyCity_id, PropertyPost_id, Admin_id, Office_id, PropertyRecord_id, PriceType_id)
+VALUES (0, 10, 'WAIKATO UNIVERSITY INVESTMENT','This property is a little cracker! Set back from the road down a right of way drive, it is one of two. Offering three bedrooms plus an outside room ensuring there is loads of space and it will attract good tenant demand. 
+The open plan living is also complemented with a conservatory that leads outside to a small fenced section. Properties like this are in huge demand and being located in a prime position close to all levels of schooling, the Waikato University, Innovation Park and the future Inland Port gives you the confidence of securing a property that will offer a high occupancy rate and return. Currently tenanted allowing for an easy buy with a return from day one! Pick up the phone, book a viewing time and make this property yours.',"This property is a little cracker! Set back from the road down a right of way drive, it is one of two. Offering three bedrooms plus an outside room ensuring there is loads of space and it will attract good tenant demand. This property is a little........"
+,3,1,1,1,93,'img/property/WAIKATO-UNIVERSITY-INVESTMENT.jpg',10,2,1,3,5,3,10,3);
+
+INSERT INTO Property_TB (Property_id, Agent_id, PropertyName, PropertyDescription, Brief, bedRoom, Garage, livingRoom, bathRoom, Size, Property_image, PropertyStreet_id, PropertySuburb_id, PropertyCity_id, PropertyPost_id, Admin_id, Office_id, PropertyRecord_id, PriceType_id)
+VALUES (0, 11,'Its Perfect', "Elevated and proudly overlooking the neighbourhood, this beautifully renovated three-bedroom family home is definitely the one you've been looking for! Tucked off the main road in a quiet cul-de-sac, our owners have outdone themselves here, turning a once tired but well-loved 1970's home into a bright, light-filled modern masterpiece with fabulous open plan living, dining and stunning kitchen that will inspire even the most reluctant cook to spend time whipping up gourmet meals. Three spacious bedrooms, a huge sleek bathroom and separate laundry complete the main floorplan whilst the garage and workshop below provide extra storage or the perfect place to tinker with your tools. The choice of two entertaining decks and rear garden which is neither too big or too small offers perfect spaces for all ages.", "Elevated and proudly overlooking the neighbourhood, this beautifully renovated three-bedroom family home is definitely the one you've been looking for! Tucked off the main road in a quiet cul-de-sac...",1,3,1,1, 744,'img/property/WAIKATO-UNIVERSITY-INVESTMENT.jpg',11,9,2,11,1,4,11,4);
+
+INSERT INTO Property_TB (Property_id, Agent_id, PropertyName, PropertyDescription, Brief, bedRoom, Garage, livingRoom, bathRoom, Size, Property_image, PropertyStreet_id, PropertySuburb_id, PropertyCity_id, PropertyPost_id, Admin_id, Office_id, PropertyRecord_id, PriceType_id)
+VALUES (0, 12, 'Neat as a pin, just move in!', "This property is a rare little gem that is nestled away in an incredibly private and peaceful setting. It's super clean and tidy inside and out. It's such a delight to see a home that has been built correctly and maintained so beautifully. The garden and grounds offer a quiet sanctuary, with abundant native bird song.", "This property is a rare little gem that is nestled away in an incredibly private and peaceful setting. It's super clean and tidy inside and out. It's such a delight to see a home that has been built correctly and maintained so beautifully... ",2,3,1,2,810,"img/property/DIXON-HEIGHTS-FITZROY-DON'T-MISS-THIS-BEAUTY!.jpg",12,10,2,12,1,4,12,5);
+
+INSERT INTO Property_TB (Property_id, Agent_id, PropertyName, PropertyDescription, Brief, bedRoom, Garage, livingRoom, bathRoom, Size, Property_image, PropertyStreet_id, PropertySuburb_id, PropertyCity_id, PropertyPost_id, Admin_id, Office_id, PropertyRecord_id, PriceType_id)
+VALUES (0, 13, 'Carpe Diem', "Seize the day because the opportunity to enter the Grey Lynn property market owning a cute 1930s bungalow on a freehold 445m2 section at such an affordable price point may never present itself again. Street appeal is next level with a charming courtyard setting positioned perfectly to catch the north facing sun. Be it morning coffee or afternoon spritz, this is a lovely spot to catch up with neighbours and soak in the serenity that this family friendly cul-de-sac offers.", "Seize the day because the opportunity to enter the Grey Lynn property market owning a cute 1930s bungalow on a freehold 445m2 section at such... ",1,3,1,1,445,'img/property/EXTENDED-FAMILY-OPTIONS-OR-SUPER-SMART-INVESTMENT.jpg',13,11,2,13,2,4,13,1);
+
+INSERT INTO Property_TB (Property_id, Agent_id, PropertyName, PropertyDescription, Brief, bedRoom, Garage, livingRoom, bathRoom, Size, Property_image, PropertyStreet_id, PropertySuburb_id, PropertyCity_id, PropertyPost_id, Admin_id, Office_id, PropertyRecord_id, PriceType_id)
+VALUES (0, 14, 'The Gathering Place'," Your family will thank you for this spacious character home, on the flat, in sunny, popular Miramar. With four generous double bedrooms there's room for all to spread out, with an adjoining separate dining room and large living room that faces west over the garden. While the kitchen has been modernised, with plenty of storage and the laundry neatly tucked away, the bathroom (and a second w/c) would respond to refurbishment giving plenty of scope for adding your stamp to this well-loved home.", "Your family will thank you for this spacious character home, on the flat, in sunny, popular Miramar... ",1,4,1,2,280,'img/property/WAIKATO-UNIVERSITY-INVESTMENT.jpg',14,12,3,14,4,5,14,2);
+
+INSERT INTO Property_TB (Property_id, Agent_id, PropertyName, PropertyDescription, Brief, bedRoom, Garage, livingRoom, bathRoom, Size, Property_image, PropertyStreet_id, PropertySuburb_id, PropertyCity_id, PropertyPost_id, Admin_id, Office_id, PropertyRecord_id, PriceType_id)
+VALUES (0, 15, 'This Is It - You Have Found It'," One of the most exclusive buildings in Wellington has a 78 sqm apartment for sale. Designed by Athfield Architects, this two-bedroom apartment is sun-drenched, north to northwest facing, with a generous walk-in wardrobe. A carpark with a storage unit comes with this gem. The building is packed with features. There is a building manager, common facilities include a gym, communal terraces, and a theatrette. The building has an earthquake rating greatly exceeding the current code. Located in the CBD, close to supermarkets, and all that Wellington City has to offer. Convenient open homes for you to view. LIM is available.", "One of the most exclusive buildings in Wellington has a 78 sqm apartment for sale. Designed by Athfield... ",1,2,1,1,78,'img/property/WAIKATO-UNIVERSITY-INVESTMENT.jpg',15,13,3,15,5,5,15,4);
+
+INSERT INTO Property_TB (Property_id, Agent_id, PropertyName, PropertyDescription, Brief, bedRoom, Garage, livingRoom, bathRoom, Size, Property_image, PropertyStreet_id, PropertySuburb_id, PropertyCity_id, PropertyPost_id, Admin_id, Office_id, PropertyRecord_id, PriceType_id)
+VALUES (0, 16, 'An Exceptional Opportunity...'," To purchase one of Khandallah's gracious residences. For the past 20 years my owners have treasured living in this private leafy location. Their elegant residence sits strategically to catch the sun from dawn to dusk, offering a rich combination of classic character, immaculately conserved and framed by 1442sqm of artistically landscaped grounds. The structured garden is a well-balanced combination of formal and informal areas with established trees, a camellia walk, espaliered fruit trees, herbaceous borders, citrus, vegetable garden, lawn, glasshouse and orchid house.", "To purchase one of Khandallah's gracious residences. For the past 20 years my owners have treasured living in this private leafy location... ",1,4,2,2,295,'img/property/MAKE-THE-CITY-YOUR-PLAYGROUND.jpg',16,14,3,15,6,5,16,4);
+
+INSERT INTO Property_TB (Property_id, Agent_id, PropertyName, PropertyDescription, Brief, bedRoom, Garage, livingRoom, bathRoom, Size, Property_image, PropertyStreet_id, PropertySuburb_id, PropertyCity_id, PropertyPost_id, Admin_id, Office_id, PropertyRecord_id, PriceType_id)
+VALUES (0, 17, 'Selling Selling... SOLD!'," Take your first foray into the housing market or snap up a rental with this newly redecorated beauty in a superb family-friendly neighbourhood. Set on a good-sized family section, this three-bedroom home has a lot to offer, plus there's plenty of potential to enhance and add value. Beautifully presented with fresh paint and new carpet throughout, the home is ready for your final touches. The lovely living, dining and kitchen area catches the sun and opens out to a fantastic timber deck. A direct view from the kitchen to the lawn makes keeping an eye on the kids nice and easy. ", "Take your first foray into the housing market or snap up a rental with this newly redecorated beauty in a superb...",1,3,2,2,50.5,'img/property/MAKE-THE-CITY-YOUR-PLAYGROUND.jpg',17,15,4,15,4,6,17,1);
+
+INSERT INTO Property_TB (Property_id, Agent_id, PropertyName, PropertyDescription, Brief, bedRoom, Garage, livingRoom, bathRoom, Size, Property_image, PropertyStreet_id, PropertySuburb_id, PropertyCity_id, PropertyPost_id, Admin_id, Office_id, PropertyRecord_id, PriceType_id)
+VALUES (0, 18, 'Brand New, Just for You!'," This property was built with no stone unturned feel the quality and comfort the minute you walk in! Please be aware that this information has been supplied by the vendor and/or sourced from: Property Guru, Property Smarts, Land Information NZ, Local Councils, ECAN, CERA and other organisations. Four Seasons Realty 2017 Ltd is merely passing over this information as supplied to us. We cannot guarantee its accuracy or reliability.", "This property was built with no stone unturned feel the quality and comfort the minute you walk in... ",1,4,2,2,239,'img/property/SUNNY-WITH-SPACE-TO-GROW.jpg',18,16,4,15,1,6,18,5);
+
+INSERT INTO Property_TB (Property_id, Agent_id, PropertyName, PropertyDescription, Brief, bedRoom, Garage, livingRoom, bathRoom, Size, Property_image, PropertyStreet_id, PropertySuburb_id, PropertyCity_id, PropertyPost_id, Admin_id, Office_id, PropertyRecord_id, PriceType_id)
+VALUES (0, 19, 'An exquisite lifestyle'," Prepare to be enchanted by this unique property, privately positioned on the edge of Prebbleton this 4.16 hectare (approximately) estate offers you all the amenities you'll ever need within an easy commute to the city. Sprawled over approximately 295sqm (approximately), the home unfolds into spacious living areas featuring over-height ceilings and beautiful exposed engineered oak beams which all add to the feeling of space. You will adore the bespoke kitchen where everything has been thoughtfully considered - from the serving window, to the oak shelving, to the quality appliances, right through to the galley style walk-in pantry. The living areas flow effortlessly out to multiple outdoor living spaces overlooking the lush lawns and mature garden.", "Prepare to be enchanted by this unique property, privately positioned on the edge of Prebbleton this 4.16 hectare (approximately) estate offers...",1,2,3,2,295,'img/property/WAIKATO-UNIVERSITY-INVESTMENT.jpg',19,17,4,15,3,6,19,5);
+
+
+
