@@ -1,8 +1,5 @@
 # DuPlessisColeRealtors
 
-#########################################
-
-
  DuPlessisColeRealtors is a Team Project that I developed in 2019 as an Assignment for Vision College when I was a student.
  
  This Project Goal is to see if the student in a Team can build a CRUD (Create, READ, Update, Delete) Operations in a website using PHP, HTML, Javascript, CSS code.
