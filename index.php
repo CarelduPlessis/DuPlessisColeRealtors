@@ -284,7 +284,7 @@ include 'include/head.php';
                                                 <ul class="houseSpec" style="list-style-type: none;">
                                                     <br>
                                                     <!--Display a features of Property-->
-                                                    <li><a href="https://icons8.com/icon/10771/sleeping-in-bed" target="_blank"><img src="img/icons/bedroom.png" title='Bed Room' data-toggle='tooltip' width="26px" height="26px" alt="icon: bedroom" ><a/> <?php echo $row['bedRoom']?></li>
+                                                    <li><a href="https://icons8.com/icon/10771/sleeping-in-bed" target="_blank"><img src="img/icons/bedroom.png" title='Bed Room' data-toggle='tooltip' width="26px" height="26px" alt="icon: bedroom" ></a> <?php echo $row['bedRoom']?></li>
                                                     <li><a href="https://icons8.com/icon/8076/garage" target="_blank"><img src="img/icons/garage.png" title='Garage' data-toggle='tooltip' width="26px" height="26px" alt="icon: garage"></a> <?php echo $row['Garage']?></li>
                                                     <li><a href="https://icons8.com/icon/66908/sofa" target="_blank"><img src="img/icons/livingroom.png" title='Living room' data-toggle='tooltip' width="26px" height="26px" alt="icon: livingroom"></a> <?php echo $row['livingRoom']?></li>
                                                     <li><a href="https://icons8.com/icon/11516/bathtub" target="_blank"><img src="img/icons/bathroom.png" title='Bath room' data-toggle='tooltip' width="26px" height="26px" alt="icon: bathroom"></a> <?php echo $row['bathRoom']?></li>

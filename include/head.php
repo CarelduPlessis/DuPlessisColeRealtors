@@ -27,10 +27,9 @@
         <meta name="theme-color" content="#ffffff">  
     
 		<meta charset= "utf-8"/>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-                
-        <!-- CSS file -->
-        <link href="css/stylesheet.css" rel="stylesheet" type="text/css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">         
+    <!-- CSS file -->
+    <link href="css/stylesheet.css" rel="stylesheet" type="text/css">
 
 	</head>
 	  <body>
@@ -41,7 +40,7 @@
               <span class="navbar-toggler-icon"></span>
             </button>
         <?php
-            //SELECT `UserAvatar` FROM `user_tb` WHERE `UserName` = "James Walsh"
+
            include("database/config.php"); // Include database connections
            
            if(!isset($_COOKIE['user'])) {

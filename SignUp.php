@@ -161,15 +161,18 @@
                     
             <p class="mt-5 mb-3 text-muted">&copy; Du Plessis Cole Realtors &middot; 2019</p>
         </form>
+        <!-- 
+            Include JavaScript to display the Alert for validation of the Sign up Form
+        -->
         <script src="JavaScript/warning.js"></script>
         <script>
           
-                /* Title: Form required attribute with a custom validation message in HTML5
-                 * Author: geeksforgeeks.org
-                 * Resource: https://www.geeksforgeeks.org/form-required-attribute-with-a-custom-validation-message-in-html5/
-                */
+            /* Title: Form required attribute with a custom validation message in HTML5
+            *  Author: geeksforgeeks.org
+            *  Resource: https://www.geeksforgeeks.org/form-required-attribute-with-a-custom-validation-message-in-html5/
+            */
                
-              /*
+            /*
               https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_oninput
 
               https://www.w3schools.com/jsref/event_onsubmit.asp
@@ -234,7 +237,7 @@
     
               https://stackoverflow.com/questions/3937513/javascript-validation-for-empty-input-field
     
-              */
+            */
             
             var SignUp = document.getElementById('SignUp'); // get Sign Up button by id 
            

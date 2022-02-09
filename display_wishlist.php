@@ -151,7 +151,8 @@ include 'include/head.php';
                             $query = "SELECT * 
                               FROM wishlist_tb
                               JOIN property_tb ON wishlist_tb.Property_id=property_tb.Property_id AND wishlist_tb.User_id = {$_COOKIE['user']}
-                              JOIN pricetype_tb ON property_tb.PriceType_id = pricetype_tb.PriceType_id";
+                              JOIN pricetype_tb ON property_tb.PriceType_id = pricetype_tb.PriceType_id
+                              JOIN propertyrecord_tb ON property_tb.PropertyRecord_id = propertyrecord_tb.PropertyRecord_id";
 
                         $result = mysqli_query($dbc, $query); // run query 
                         while($row=mysqli_fetch_assoc($result)){ //Fetch a result row as a numeric array and as an associative(string) array
@@ -182,8 +183,8 @@ include 'include/head.php';
                                                             if($row['IsSold'] == 'TRUE'){
                                                                echo '<li class="float-right">Sold</li>'; 
                                                             }else{
-                                                                 $price = $row['Price'];
-                                                                 echo "<li class='float-right'> $price </li>"; 
+                                                                 $priceType = $row['PriceType'];
+                                                                 echo "<li class='float-right'> $priceType </li>"; 
                                                             }
                                                         ?>
                                                     </ul>
