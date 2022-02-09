@@ -13,3 +13,8 @@ I made the forms look more modern and profesional.
 
 I will continue to make improvements and Test the website for bugs.
 
+
+
+* Dummy User
+
+James Walsh is set to Logged In. If you want Log in as James Walsh you need to go to the user table and set isloggedin to FALSE (Capital letters sensitive)
