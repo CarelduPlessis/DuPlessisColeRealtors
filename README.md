@@ -17,4 +17,4 @@ I will continue to make improvements and Test the website for bugs.
 
 * Dummy User
 
-James Walsh is set to Logged In. If you want Log in as James Walsh you need to go to the user table and set isloggedin to FALSE (Capital letters sensitive)
+James Walsh is set to Logged In. If you want to Log in as James Walsh you need to go to the user table and set isloggedin to FALSE the value of the column is Capital letters sensitive.
