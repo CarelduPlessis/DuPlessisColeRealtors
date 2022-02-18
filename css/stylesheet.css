@@ -8,7 +8,181 @@
     z-index: 1;
 }
 
-   
 
+
+ /*bootstrap styling starts*/
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+          }
+      }
+    /*bootstrap styling ends*/
     
+
+  .link, .link:visited, .link:hover, .link:active, .link:link{ color: gray; text-decoration: none;}
+
+
+
+    /* On screens that are 992px wide or less */
+    @media screen and (max-width: 992px) {
+    .card_body {
+        width: 60%;
+        height: auto;
+      }
+    }
+
+    /* Responsive for tablets/ipads */ /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+    @media (min-width:641px)  { 
+    .card_body {
+      width:60%;
+      height:auto;
+      }    
+    }
+
+    /* Responsive for phones */
+    @media screen and (max-width: 600px) {
+    .myColumn {
+        width: 100%;
+        display: block;
+        align-content: center;
+      }
+    }
     
+    /* Float cards one after another */
+    .myColumn {
+      position: relative;
+      left: 18%;
+      right: 8%;
+      padding: 0 10px;
+      max-width: 800px;
+    }
+
+    .banner { /*styling for the banner to introduce the page*/
+      max-width: 100%;
+      height: auto;
+    }
+
+    /*Give the achor tage with this class the color gray and remove underline in all events.*/
+  .link, .link:visited, .link:hover, .link:active, .link:link { 
+      color: gray; 
+      text-decoration: none;
+    }
+    
+  /* Remove extra left and right margins, due to padding */
+  .myRow {
+     position: relative;
+     right: 35%;
+     left: 23%;
+  }
+  
+  /* Clear floats after the columns */
+  .myRow:after {
+    content: "";
+    display: table;
+    clear: both;
+            }
+
+  ul.houseSpec > li{ /*style the list of the icons on the property cards*/
+      display: inline-block;
+  }
+  
+  /* Style the counter cards */
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    background-color: #f1f1f1;
+  }
+
+.filter_style { /* Style for the filter of the property*/
+  position: relative;
+  right: 25%;
+  left: 25%;
+}
+
+
+/* navigation buttons between  property pages */
+.pagenumber-btn{ 
+    position: relative;
+    right: 45%;
+    left: 42%;
+ }
+
+
+
+ /******************************************
+
+   Contact Us Page
+
+ ******************************************/
+
+ /* Style the container/contact section */
+ .contactUs-container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.contactUs-column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.contactUs-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+/******************************************
+
+   Property Page
+
+ ******************************************/
+
+/*
+ .PropertyInfo-Container {
+  position: absolute;
+  padding-left: 15%;
+  padding-right: 15%;
+}*/
+
+/* Float cards on one another */
+.property-Column {
+  float: left;
+  padding: 0 10px;
+  background: white;
+}
+
+.PropertyInfo-Container {
+  display: inline-block;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+ul.agent-details > li{
+  display: inline-block;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .property-Column {
+    width: 100%;
+    display: block;
+    align-content: center;
+  }
+}

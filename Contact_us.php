@@ -23,23 +23,7 @@ include 'include/head.php';
     <link href="css/stylesheet.css" rel="stylesheet">
 
     <style>
-       /*bootstrap styling starts*/
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-      }
-
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-       /*bootstrap styling ends*/
-      
+       
     *{
         box-sizing: border-box;
     }
@@ -49,7 +33,7 @@ include 'include/head.php';
     }
  
     /* Style inputs */
-    input[type=text], select, textarea {
+    input[type=text], input[type=email], select, textarea {
       width: 100%;
       padding: 12px;
       border: 1px solid #ccc;
@@ -70,28 +54,6 @@ include 'include/head.php';
       background-color: #45a049;
     }
 
-    /* Style the container/contact section */
-    .contactUs-container {
-      border-radius: 5px;
-      background-color: #f2f2f2;
-      padding: 10px;
-    }
-
-    /* Create two columns that float next to eachother */
-    .contactUs-column {
-      float: left;
-      width: 50%;
-      margin-top: 6px;
-      padding: 20px;
-    }
-
-    /* Clear floats after the columns */
-    .contactUs-row:after {
-      content: "";
-      display: table;
-      clear: both;
-    }
-
     /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
     @media screen and (max-width: 600px) {
       .contactUs-column, input[type=submit] {
@@ -99,11 +61,7 @@ include 'include/head.php';
         margin-top: 0;
       }
     }
-    
-    .banner { /*styling for the banner to introduce the page*/
-              max-width: 100%;
-              height: auto;
-    }
+
     </style>
     <!-- Custom styles for this template -->
     <link href="css/carousel.css" rel="stylesheet">
@@ -120,7 +78,7 @@ include 'include/head.php';
  <!--
  https://www.w3schools.com/howto/howto_css_contact_section.asp
  -->   
-    <div class="contactUs-container">
+      <div class="contactUs-container">
         <div style="text-align:center">
             <h2>Contact Us</h2>
             <p>Feel free to contact us at any time:</p>
@@ -266,11 +224,11 @@ include 'include/head.php';
                   <label for="message">Message</label>
                   <textarea id="message" name="message" placeholder="Write something.." style="height:170px"></textarea>
                   <input type="submit" id="ContactUs" value="Contact Us" name="ContactUs" >
-              </form>
+                </form>
             </div>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.468950075492!2d175.29779131523273!3d-37.77904837975862!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d6d18c267f747ab%3A0x32ae8d4c80ea3728!2sVision%20College%20-%20Hamilton!5e0!3m2!1sen!2snz!4v1569139050975!5m2!1sen!2snz" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
         </div>
-    </div>
+      </div>
     <script src="JavaScript/warning.js"></script>
     <script>
         //validate user input 
@@ -323,6 +281,7 @@ include 'include/head.php';
    include 'include/footer.php'; 
    ?>
 </main>
+</body>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
       <script>window.jQuery || document.write('<script src="/docs/4.3/assets/js/vendor/jquery-slim.min.js"><\/script>');</script><script src="JavaScript/bootstrap.bundle.js" ></script></body>
 </html>

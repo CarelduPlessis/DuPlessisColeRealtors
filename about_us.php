@@ -15,14 +15,14 @@ include 'include/head.php'; // Include header before user logs in
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/carousel/">
     <style>
-    body{
-      font-family: Arial, Helvetica, sans-serif;
-    }
+      body{
+        font-family: Arial, Helvetica, sans-serif;
+      }
 
-    .banner {
-              max-width: 100%;
-              height: auto;
-    }
+      .banner {
+        max-width: 100%;
+        height: auto;
+      }
     </style>
   </head>
   
@@ -99,10 +99,6 @@ include 'include/head.php'; // Include header before user logs in
    include 'include/footer.php'; 
    ?>
 </main>
-
-
-
-
 <script> src="javascript/custom_javascript.js"</script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script>window.jQuery || document.write('<script src="/docs/4.3/assets/js/vendor/jquery-slim.min.js"><\/script>')</script>

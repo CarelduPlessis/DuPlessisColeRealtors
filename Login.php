@@ -17,6 +17,7 @@
 
     <style>
        /*bootstrap styling starts*/
+       /*
       .bd-placeholder-img {
         font-size: 1.125rem;
         text-anchor: middle;
@@ -30,7 +31,7 @@
         .bd-placeholder-img-lg {
           font-size: 3.5rem;
         }
-      }
+      }*/
       /*bootstrap styling ends*/
       
       .login_body {
@@ -152,7 +153,6 @@
     ?>
   </head>
     <body class="text-center login_body">
-        
         <!--Login Form-->
         <form method="post" class="form-signin">
             <img class="mb-4" src="img/avatar/default-avatar2.png" alt="default user avatar" width="100" height="100" style="border-radius: 50%;">

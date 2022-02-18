@@ -37,6 +37,7 @@
 
     <style>
       /*bootstrap styling starts*/
+      /*
       .bd-placeholder-img {
         font-size: 1.125rem;
         text-anchor: middle;
@@ -50,9 +51,11 @@
         .bd-placeholder-img-lg {
           font-size: 3.5rem;
         }
-      }
+      }*/
       /*bootstrap styling ends*/
     </style>
+
+    
     <!-- My styles for this template -->
     <link href="css/stylesheet.css" rel="stylesheet">
     

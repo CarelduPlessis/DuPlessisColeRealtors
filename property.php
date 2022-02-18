@@ -16,22 +16,10 @@ include 'include/head.php'; // Include head before user logs in
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.css" integrity="pVreZ67fRaATygHF6T+gQtF1NI700W9kzeAivu6au9U=" rel="stylesheet" >
 
-    <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-      }
+    <!-- My styles for this template -->
+    <link href="css/stylesheet.css" rel="stylesheet">
 
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-      
+    <style>
     *{
         box-sizing: border-box;
     }
@@ -40,62 +28,18 @@ include 'include/head.php'; // Include head before user logs in
       font-family: Arial, Helvetica, sans-serif;
     }
 
-    .PropertyInfo-Container {
-      position: absolute;
-      padding-left: 4%;
-      padding-right: 4%;
-    }
-
-    /* Float cards on one another */
-    .myColumn {
-      float: left;
-      padding: 0 10px;
-      background: white;
-    }
-     .link, .link:visited, .link:hover, .link:active, .link:link{ color: gray; text-decoration: none;}
-    /* Remove extra left and right margins, due to padding */
+     /* Remove extra left and right margins, due to padding */
     .myRow {
        position: relative;
        right: 25%;
        left: 25%;
     }
-    
-    .mybutton{
-       position: relative;
-       right: 45%;
-       left: 27%;
-    }
 
-    /* Clear floats after the columns */
+     /* Clear floats after the columns */
     .myRow:after {
       content: "";
       display: table;
       clear: both;
-    }
-    
-    ul.houseSpec > li{
-        display: inline-block;
-    }
-
-    /* Responsive columns */
-    @media screen and (max-width: 600px) {
-      .myColumn {
-        width: 100%;
-        display: block;
-        align-content: center;
-      }
-    }
-
-    /* Style the counter cards */
-    .card {
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-      padding: 16px;
-      background-color: #f1f1f1;
-    }
-
-    .banner {
-              max-width: 100%;
-              height: auto;
     }
     </style>
     <!-- Custom styles for this template -->
@@ -161,56 +105,58 @@ include 'include/head.php'; // Include head before user logs in
             
             $currentBid =  number_format($row['currentBid'],2); // format the current Bid in the database to a 2 decimal place number
             
-    ?> 
-       <!--Display a features of Property-->
-        <h1 style="padding-left: 10px;"><?php echo $row['PropertyName']?></h1>
-        <br>
-        <h5 style="padding-left: 10px;"><?php echo $row['PropertyStreet'] .', '. $row['PropertySuburb'].', '. $row['PropertyCity'].', '. $row['PropertyPost']?></h5>
-        <br>
-            <ul class="houseSpec" style="list-style-type: none;">   
-              <li><a href="https://icons8.com/icon/10771/sleeping-in-bed" target="_blank"><img src="img/icons/bedroom.png" title='Bed Room' data-toggle='tooltip' width="26px" height="26px" alt="icon: bedroom"><a/> <?php echo $row['bedRoom']?></li>
-              <li><a href="https://icons8.com/icon/8076/garage" target="_blank"><img src="img/icons/garage.png" title='Garage' data-toggle='tooltip' width="26px" height="26px" alt="icon: garage"></a> <?php echo $row['Garage']?></li>
-              <li><a href="https://icons8.com/icon/66908/sofa" target="_blank"><img src="img/icons/livingroom.png" title='Living Room' data-toggle='tooltip' width="26px" height="26px" alt="icon: livingroom"></a> <?php echo $row['livingRoom']?></li>
-              <li><a href="https://icons8.com/icon/11516/bathtub" target="_blank"><img src="img/icons/bathroom.png" title='Bath Room' data-toggle='tooltip' width="26px" height="26px" alt="icon: bathroom"></a> <?php echo $row['bathRoom']?></li>
-              <li><strong>Size:</strong> <?php echo $row['Size'] ?> m2</li>
-              <br>
-              <br>
-              <?php
-                  // Check if property is Sold or Is Bid on or not Sold and not Bid on property
-                  if($row['IsSold'] == 'TRUE'){
-                      echo '<li><strong>The house is Sold</strong></li>'; 
-                  }else if($row['IsBid'] == 'TRUE'){
-                      echo '<li><strong>Current Bid:</strong> $'  . $currentBid . '</li>'; 
-                  }else{
-                      echo '<li><strong>Starting Price:</strong> $'  . $starting_price . '</li>'; 
-                  } 
-                  echo '&emsp;&emsp;<li><strong> Type of Sale: </strong>'  . $row['PriceType'] . '</li>';  
-              ?>
-                
-              <?php
-                  // is user logged in
-                  if(isset($_COOKIE['user'])) { // is $_COOKIE['user'] empty / is user logged in 
+    ?>  
+             
+                <!--Display a features of Property-->
+                <h1 style="padding-left: 10px;"><?php echo $row['PropertyName']?></h1>
+                <br>
+                <h5 style="padding-left: 10px;"><?php echo $row['PropertyStreet'] .', '. $row['PropertySuburb'].', '. $row['PropertyCity'].', '. $row['PropertyPost']?></h5>
+                <br>
+                <ul class="houseSpec" style="list-style-type: none;">   
+                  <li><a href="https://icons8.com/icon/10771/sleeping-in-bed" target="_blank"><img src="img/icons/bedroom.png" title='Bed Room' data-toggle='tooltip' width="26px" height="26px" alt="icon: bedroom"><a/> <?php echo $row['bedRoom']?></li>
+                  <li><a href="https://icons8.com/icon/8076/garage" target="_blank"><img src="img/icons/garage.png" title='Garage' data-toggle='tooltip' width="26px" height="26px" alt="icon: garage"></a> <?php echo $row['Garage']?></li>
+                  <li><a href="https://icons8.com/icon/66908/sofa" target="_blank"><img src="img/icons/livingroom.png" title='Living Room' data-toggle='tooltip' width="26px" height="26px" alt="icon: livingroom"></a> <?php echo $row['livingRoom']?></li>
+                  <li><a href="https://icons8.com/icon/11516/bathtub" target="_blank"><img src="img/icons/bathroom.png" title='Bath Room' data-toggle='tooltip' width="26px" height="26px" alt="icon: bathroom"></a> <?php echo $row['bathRoom']?></li>
+                  <li><strong>Size:</strong> <?php echo $row['Size'] ?> m2</li>
+                  <br>
+                  <br>
+                  <?php
+                      // Check if property is Sold or Is Bid on or not Sold and not Bid on property
+                      if($row['IsSold'] == 'TRUE'){
+                          echo '<li><strong>The house is Sold</strong></li>'; 
+                      }else if($row['IsBid'] == 'TRUE'){
+                          echo '<li><strong>Current Bid:</strong> $'  . $currentBid . '</li>'; 
+                      }else{
+                          echo '<li><strong>Starting Price:</strong> $'  . $starting_price . '</li>'; 
+                      } 
+                      echo '&emsp;&emsp;<li><strong> Type of Sale: </strong>'  . $row['PriceType'] . '</li>';  
+                  ?>
                     
+                  <?php
+                      // is user logged in
+                      if(isset($_COOKIE['user'])) { // is $_COOKIE['user'] empty / is user logged in 
+                        
 
-                    if($row['IsSold'] != 'TRUE' && $db_Property_id != $Property_id){
-                    ?>
-                    <li><a href="add_wishlist.php?id=<?php echo  $Property_id ?>"><strong>Add to Wishlist</strong></a></li>
-                  
-                    <?php
+                        if($row['IsSold'] != 'TRUE' && $db_Property_id != $Property_id){
+                        ?>
+                        <li><a href="add_wishlist.php?id=<?php echo  $Property_id ?>"><strong>Add to Wishlist</strong></a></li>
+                      
+                        <?php
+                        
+                        }else if($row['IsSold'] == 'TRUE' && $db_Property_id == $Property_id || $db_Property_id == $Property_id){
+                        ?> 
+                          <li><a href="remove_wishlist.php?id=<?php echo  $Property_id ?>"><strong>Remove from Wishlist</strong></a></li>
                     
-                    }else if($row['IsSold'] == 'TRUE' && $db_Property_id == $Property_id || $db_Property_id == $Property_id){
-                    ?> 
-                       <li><a href="remove_wishlist.php?id=<?php echo  $Property_id ?>"><strong>Remove from Wishlist</strong></a></li>
-                
-                    <?php
+                        <?php
+                        }
                     }
-                }
-              ?> 
-               
-            </ul>
+                  ?> 
+                  
+                </ul>
+            
            
             <!--Display the information of Property like image, Description, who is the Agent -->
-            <div class="myColumn">
+            <div class="property-Column">
                 <div class="row no-gutters">
                     <div class="col-md-4">
                         <br>
@@ -221,7 +167,7 @@ include 'include/head.php'; // Include head before user logs in
                             <p class="card-text"><?php echo $row['PropertyDescription']?></p>
                             
                             <!-- Displays the agent connected to the property, displays their name and image  -->
-                            <ul class="houseSpec" style="list-style-type: none;">   
+                            <ul class="agent-details" style="list-style-type: none;">   
                                 <li>
                                     <img src="<?php echo $row['AgentAvatar']?>" width="180px" height="180px" alt="Agent: <?php echo $row['AgentFullName']?>" style="border-radius: 2%;">
                                     <p><strong><?php echo $row['AgentFullName']?></strong></p>
@@ -243,14 +189,14 @@ include 'include/head.php'; // Include head before user logs in
     ?> 
     
   </div>
-  
+ 
   <!-- FOOTER -->
-  <div style='top:50em;  position: relative;'> 
       <?php 
           include 'include/footer.php'; 
         ?>
-  </div>
+     
 </main>
+</body>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script>window.jQuery || document.write('<script src="/docs/4.3/assets/js/vendor/jquery-slim.min.js"><\/script>');</script><script src="JavaScript/bootstrap.bundle.js" ></script></body>
 </html>

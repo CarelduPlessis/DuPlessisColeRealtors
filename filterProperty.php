@@ -15,118 +15,41 @@ include 'include/head.php';
     <title>Du Plessis Cole Realators - Home</title>
     
     <style>
-            /*bootstrap styling starts*/
-            @media (min-width: 768px) {
-            .bd-placeholder-img-lg {
-                font-size: 3.5rem;
-                }
-            }
-            
-            .bd-placeholder-img {
-              font-size: 1.125rem;
-              text-anchor: middle;
-              -webkit-user-select: none;
-              -moz-user-select: none;
-              -ms-user-select: none;
-              user-select: none;
-            }
-            /*bootstrap styling ends*/
-            
-            /* On screens that are 992px wide or less */
-            @media screen and (max-width: 992px) {
-            .card_body {
-                width: 60%;
-                height: auto;
-              }
-            }
+        *{
+            box-sizing: border-box;
+        }
 
-            /* Responsive for tablets/ipads */ /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
-            @media (min-width:641px)  { 
-            .card_body {
-              width:60%;
-              height:auto;
-              }    
-            }
-
-            /* Responsive for phones */
-            @media screen and (max-width: 600px) {
-            .myColumn {
-                width: 100%;
-                display: block;
-                align-content: center;
-              }
+        
+        body {  /*The font family used in the website*/
+                  font-family: Arial, Helvetica, sans-serif;
             }
             
-            /* Float cards one after another */
+        html, body { /*make sure elements fits on the page*/
+                  max-width: 100%;
+                  overflow-x: hidden;
+        }
+
+
+         /* Float cards one after another */
+            /*
             .myColumn {
               position: relative;
               left: 8%;
               right: 8%;
               padding: 0 10px;
               max-width: 800px;
-            }
+            }*/
 
-            .banner { /*styling for the banner to introduce the page*/
-              max-width: 100%;
-              height: auto;
-            }
-
-            body {  /*The font family used in the website*/
-                  font-family: Arial, Helvetica, sans-serif;
-            }
-            
-            html, body { /*make sure elements fits on the page*/
-                  max-width: 100%;
-                  overflow-x: hidden;
-            }
-
-           /*Give the achor tage with this class the color gray and remove underline in all events.*/
-          .link, .link:visited, .link:hover, .link:active, .link:link { 
-              color: gray; 
-              text-decoration: none;
-            }
-            
-          /* Remove extra left and right margins, due to padding */
-          .myRow {
-             position: relative;
-             right: 35%;
-             left: 23%;
-          }
-          
-          /* Clear floats after the columns */
-          .myRow:after {
-            content: "";
-            display: table;
-            clear: both;
-                    }
-
-          ul.houseSpec > li{ /*style the list of the icons on the property cards*/
-              display: inline-block;
-          }
-          
-          /* navigation buttons between  property pages */
+        /* navigation buttons between  property pages */
+          /*
+           rename class in stylesheet to pagenumber-btn
           .mybutton{ 
              position: relative;
              right: 45%;
              left: 27%;
-          }
+          }*/
 
-          /* Style the counter cards */
-          .card {
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-            padding: 16px;
-            background-color: #f1f1f1;
-          }
-
-        *{
-            box-sizing: border-box;
-        }
-
-        .filter_style { /* Style for the filter of the property*/
-            position: relative;
-          right: 25%;
-          left: 25%;
-        }
+          
         
     </style>
      
@@ -336,17 +259,17 @@ include 'include/head.php';
                 
                 // If there are more pages to go back to, then you can click Previous.
                 if($page>1){
-                    echo "<a href='filterProperty.php?city=$city&page=".($page-1)."' class='btn mybutton' Style='background-color:#333740; color:white;'>Previous</a>";
+                    echo "<a href='filterProperty.php?city=$city&page=".($page-1)."' class='btn pagenumber-btn' Style='background-color:#333740; color:white;'>Previous</a>";
                 }
                 
                 // Create the numbered navigation buttons. That navigates between page using index values to go to a precise page.   
                 for($i=1;$i<$total_page;$i++){
-                    echo "<a href='filterProperty.php?city=$city&page=".($i)."' class='btn mybutton' Style='background-color:#EEC494; color:black;'>$i</a>";
+                    echo "<a href='filterProperty.php?city=$city&page=".($i)."' class='btn pagenumber-btn' Style='background-color:#EEC494; color:black;'>$i</a>";
                 }
                 // $i is the total number of page
                 // If there are more page to go to, then you can click next.
                 if($i>$page){
-                    echo "<a href='filterProperty.php?city=$city&page=".($page+1)."' class='btn mybutton' Style='background-color:#333740; color:white;'>Next</a>";
+                    echo "<a href='filterProperty.php?city=$city&page=".($page+1)."' class='btn pagenumber-btn' Style='background-color:#333740; color:white;'>Next</a>";
                 }
                 
                 mysqli_close($dbc); // Close the connection
