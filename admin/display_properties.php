@@ -12,7 +12,7 @@ if(isset($_COOKIE['admin'])){	// is player logged in??
     <html lang="en">
     <head>
     <meta charset="utf-8" />
-        <title>Edit Properties</title> 
+        <title>Manage Properties</title> 
         <meta charset="utf-8">
             <meta http-equiv="X-UA-Compatible" content="IE=edge">
             <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -53,14 +53,15 @@ if(isset($_COOKIE['admin'])){	// is player logged in??
                 td.column_ID {width: 5%;}
                 td.column_PropertyName {width: 41.5%;}
                 td.column_Description {width: 41.5%;}
-                /*td.column_CRUD {width: 35%;}*/
                 td.column_CRUD {width: 12%;}
+
                 /*
+                td.column_CRUD {width: 35%;}
                 td.column_Edit {width: 70%;}
                 td.column_Delete {width: 70%;}
                 td.column_AddAgent {width: 70%;}
                 td.column_PropertyImage {width: 70%;}
-                	*/		
+                */		
                 
             </style>
     </head>
@@ -110,14 +111,14 @@ if(isset($_COOKIE['admin'])){	// is player logged in??
                                         <td class="column_PropertyName"><?php echo $row["PropertyName"]; ?></td> <!-- echo property name id -->
                                         <td class="column_Description"><?php echo $row["Brief"]; ?></td> <!-- echo brief id -->
                                         <td class="column_CRUD">
-                                                <a href="edit_properties.php" >
-                                                    <i class="material-icons update" data-toggle="tooltip" 
+                                            <a href="edit_properties.php" >
+                                                <i class="material-icons update" data-toggle="tooltip" 
                                                         data-id="<?php echo $row["Property_id"]; ?>"
                                                         data-PropertyName="<?php echo $row["PropertyName"]; ?>"
                                                         data-Brief="<?php echo $row["Brief"]; ?>"
                                                         title="Edit"><td><a href="edit_properties.php?property_id=<?php echo $row["Property_id"];?>" title="edit properties"><img src="../img/icons/button_edit.png" width="40" border="0"></a></td>
-                                                    </i>
-                                                </a>
+                                                </i>
+                                            </a>
                                             <td border="0"><a href="DeleteProperty.php?property_id=<?php echo $row["Property_id"];?>" title="Delete Property"><img src="../img/icons/button_delete.png" width="40" ></a></td>                                           
                                             <td><a href="AddAgent.php?property_id=<?php echo $row["Property_id"];?>" title="Add Agent"><img src="../img/icons/button_add.png" width="40" ></a></td>
                                             <td border="0"><a href="AddPropertyImg.php?property_id=<?php echo $row["Property_id"];?>" title="Add Property Image"><img src="../img/icons/button_add.png" width="40" ></a></td>

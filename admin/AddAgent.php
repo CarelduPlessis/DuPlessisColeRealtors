@@ -44,99 +44,38 @@ if(isset($_COOKIE['admin'])){ // is player logged in??
     <html lang="en">
       <head>
         <meta charset="utf-8" />
-        <title>Du Plessis Cole Realtors - Add Property Image</title> 
+        <title>Du Plessis Cole Realtors - Add Agent to Property</title> 
         <meta charset="utf-8">
             <meta http-equiv="X-UA-Compatible" content="IE=edge">
             <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <style>
-             input[type=submit] {     
-                background-color: #333740;
-                color: white;
-                padding: 12px 20px;
-                border: none;
-                border-radius: 4px;
-                cursor: pointer;
-                float: right;
-                margin: 0 auto;
-            }
-
-            .back-btn-link {
-                margin: 0 auto;
-            }
-
-            input[type=submit]:hover {
-                background-color: #45a049;
-            }
-
-            input[type=text], select, textarea, input[type=tel] {
-                 width: 100%;
-                padding: 12px;
-                border: 1px solid #ccc;
-                border-radius: 4px;
-                resize: vertical;
-            }
-
-            label {
-                padding: 12px 12px 12px 0;
-                display: inline-block;
-                font-size: 15px;
-            }
-
-
-
-            .container {
-                border-radius: 5px;
-                background-color: #f2f2f2;
-                padding: 45px;
-            }
-
-            .col-25 {
-                float: left;
-                width: 25%;
-                margin-top: 6px;
-            }
-
-            .col-75 {
-                float: left;
+            .SelectAgent {
                 width: 75%;
-                margin-top: 6px;
+                margin-bottom: 10px;
+                
             }
 
-            /* Clear floats after the columns */
-            .row:after {
-                content: "";
-                display: table;
-                clear: both;
-            }
-
-             /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-             @media screen and (max-width: 600px) {
-                .col-25, .col-75, input[type=submit] {
-                    width: 100%;
-                    margin-top: 0;
-                }
-            }
-            .uploadProperty {
-                position:relative;
-                top: 150px;
+            .LabelAgent {
+                text-align: center;
+                width: 20%;
             }
         </style>
       </head>
         <body>
             <main role="main">
-            <div class="container marketing uploadProperty"> 
-                <h3>Add Agent to Property: </h3>
+            <div class="container uploadProperty"> 
+                <h3>Add Agent to Property</h3>
                 <hr>
                 <br>
                 <!-- Add Agent to Property Form-->
                     <form  class="form-signin" method="post">
-                    <div class="row">
-                            <div class="col-25">
-                            <label for="Agent_id">Agents</label>
-                            </div>
-                            <div class="col-75">
-                                <select id="Agent_id" name="Agent_id">
+                        <div class="row">
+                            <!-- <div class="col-25"> -->
+                            <label for="Agent_id" class="LabelAgent">Agents:</label>
+                            <!-- </div> -->
+                            <!-- <div class="col-75"> -->
+                                <select id="Agent_id" name="Agent_id" class="SelectAgent">
                                     <?php
                                          $query = "SELECT * FROM agent_tb";
                                         if($r = mysqli_query($dbc, $query)){ // Run the Query. 
@@ -152,12 +91,12 @@ if(isset($_COOKIE['admin'])){ // is player logged in??
                                         }
                                     ?>
                                 </select>
-                            </div>
+                            <!-- </div> -->
                         </div>
                         <div class="row">
                             <input type="submit"  id="Submit" name="AddAgent" value="Add Agent to Property" class="btn btn-lg">
                         </div>
-                    </form>
+                    </form>  
             </div><!-- End of container and upload property image -->
             </main>
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

@@ -1,5 +1,7 @@
 * {
-	margin:0; padding:0;
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
 }
 
 .footer-links-container {
@@ -12,10 +14,93 @@
   font-size: 1em;
 }
 
+input[type="submit"] {
+  background-color: #333740;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  float: right;
+  margin: 0 auto;
+}
 
-/* Add Properties buttons */
+.back-btn-link {
+  margin: 0 auto;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+input[type="text"],
+select,
+textarea,
+input[type="tel"] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+  font-size: 15px;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 45px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25,
+  .col-75,
+  input[type="submit"] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+.clearfix::after {
+  /* Clear fix hack to avoid creating empty div tag in html */
+  /* clear float */
+  content: ""; /* there needs to be content to have the Pseudo after element displayed in the html */
+  display: block;
+  clear: both;
+}
+
+.uploadProperty {
+  position: relative;
+  top: 150px;
+}
+
+/* Add Properties buttons 
 .button {
-  background-color: #4CAF50; /* Green */
+  background-color: #4caf50; /* Green 
   border: none;
   color: white;
   padding: 16px 32px;
@@ -24,7 +109,7 @@
   display: inline-block;
   font-size: 16px;
   margin: 4px 2px;
-  -webkit-transition-duration: 0.4s; /* Safari */
+  -webkit-transition-duration: 0.4s; /* Safari 
   transition-duration: 0.4s;
   cursor: pointer;
 }
@@ -39,4 +124,18 @@
   background-color: #555555;
   color: white;
 }
+*/
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
 
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}

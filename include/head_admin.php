@@ -8,7 +8,7 @@
         <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
 
         <!-- CSS file -->
-        <link href="../css/style.css" rel="stylesheet" type="text/css">
+        <link href="../css/style.css?v=4" rel="stylesheet" type="text/css">
 
         <link rel="apple-touch-icon" sizes="57x57" href="../img/Favicon/apple-icon-57x57.png">
         <link rel="apple-touch-icon" sizes="60x60" href="../img/Favicon/apple-icon-60x60.png">

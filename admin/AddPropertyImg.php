@@ -43,7 +43,8 @@ if(isset($_COOKIE['admin'])){ // is player logged in??
                                         // image file directory
                                         $PropertyImage = $Store_dir.basename($image2);
 
-                                    //$query_UPDATE2 = "UPDATE property_tb SET Property_image= '$PropertyImage' WHERE Property_id=$Property_id"; // SQL for updating a property image to property_tb
+                                    //$query_UPDATE2 = "UPDATE property_tb SET Property_image= '$PropertyImage' WHERE Property_id=$Property_id"; 
+                                    // SQL for updating a property image to property_tb
                                     $query_UPDATE2 = "UPDATE property_tb SET Property_image='$PropertyImage' WHERE  Property_id={$Property_id}";
 
                                     if(@mysqli_query($dbc, $query_UPDATE2)){
@@ -101,9 +102,20 @@ if(isset($_COOKIE['admin'])){ // is player logged in??
             <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <style>
-        .uploadProperty {
-            position:relative;
-            top: 150px;
+        input[type="submit"] {
+            float: none;
+        }
+
+        .PropertyImageForm-input-container, h3 {
+           display: flex;
+           justify-content: center;
+           
+        }
+
+        .form-signin {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
         }
         </style>
       </head>
@@ -112,17 +124,20 @@ if(isset($_COOKIE['admin'])){ // is player logged in??
             <!-- Featurettes
             ================================================== -->
             <div class="container marketing uploadProperty"> 
-                <h3>Add Property Image</h3>
-                <hr>
-                <br>
-                <!-- Add property image Form-->
-                    <form  class="form-signin" method="post" enctype="multipart/form-data">
-                        <label for="SelectPropImg">Property image</label>
-                        <input type="file" name="PropertyImage" id="SelectPropImg">
-                        <p><strong>Note:</strong> Only .jpg, .jpeg, .gif, .png formats allowed to a max size of 5 MB.</p>
-                        <br>
-                        <input type="submit" name="PropImgUpload" value="Upload Image">
-                    </form>
+            <h3>Add Property Image</h3>
+            <hr>
+                <div class="PropertyImageForm-input-container">
+                    
+                    <!-- Add property image Form-->
+                        <form  class="form-signin" method="post" enctype="multipart/form-data">
+                            <label for="SelectPropImg"><strong>Property image:</strong> <input type="file"  name="PropertyImage" id="SelectPropImg" ></label>
+                            
+                            <p><strong>Note:</strong> Only .jpg, .jpeg, .gif, .png formats allowed to a max size of 5 MB.</p>
+                            <input type="submit" name="PropImgUpload" value="Upload Image">
+                            </br>
+                            <a href="../admin/display_properties.php" class="back-btn-link" style="color:#333740">Go Back</a>
+                        </form>
+                </div>
             </div><!-- End of container and upload property image -->
             </main>
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

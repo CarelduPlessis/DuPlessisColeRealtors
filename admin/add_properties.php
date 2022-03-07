@@ -11,9 +11,8 @@ if(isset($_COOKIE['admin'])){ // is admin logged in??
     <!doctype html>
     <html lang="en">
       <head>
-      <title>Du Plessis Cole Realtors Content Management</title>
-    <link href="../style.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round">
+            <title>Du Plessis Cole Realtors - Add Properties</title>
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round">
             <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
             <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
             <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -21,99 +20,23 @@ if(isset($_COOKIE['admin'])){ // is admin logged in??
             <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
             <script src="ajax/ajax.js"></script>
 
-        <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/sign-in/">
-    <meta charset="utf-8" />
-        <title>Du Plessis Cole Realtors - Add Properties</title>
-        <meta charset="utf-8">
+            <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/sign-in/">
+            <meta charset="utf-8" />
             <meta http-equiv="X-UA-Compatible" content="IE=edge">
             <meta name="viewport" content="width=device-width, initial-scale=1">
             
         <style>
-            * {
-                box-sizing: border-box;
-            }
-
-            input[type=text], select, textarea, input[type=tel] {
-                 width: 100%;
-                padding: 12px;
-                border: 1px solid #ccc;
-                border-radius: 4px;
-                resize: vertical;
-            }
-
-            label {
-                padding: 12px 12px 12px 0;
-                display: inline-block;
-                font-size: 15px;
-            }
-
-            input[type=submit] {     
-                background-color: #333740;
-                color: white;
-                padding: 12px 20px;
-                border: none;
-                border-radius: 4px;
-                cursor: pointer;
-                float: right;
-                margin: 0 auto;
-            }
-
-            .back-btn-link {
-                margin: 0 auto;
-            }
-
-            input[type=submit]:hover {
-                background-color: #45a049;
-            }
-
+            /* Bootstrap Conflic - need to be fixed */
             .container {
                 border-radius: 5px;
                 background-color: #f2f2f2;
                 padding: 45px;
-            }
+            } 
 
             .col-25 {
-                float: left;
-                width: 25%;
-                margin-top: 6px;
+                width: 20%;
+                margin-left: 20px;
             }
-
-            .col-75 {
-                float: left;
-                width: 75%;
-                margin-top: 6px;
-            }
-
-            /* Clear floats after the columns */
-            .row:after {
-                content: "";
-                display: table;
-                clear: both;
-            }
-
-            /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-            @media screen and (max-width: 600px) {
-                .col-25, .col-75, input[type=submit] {
-                    width: 100%;
-                    margin-top: 0;
-                }
-            }
-
-            
-          .bd-placeholder-img {
-            font-size: 1.125rem;
-            text-anchor: middle;
-            -webkit-user-select: none;
-            -moz-user-select: none;
-            -ms-user-select: none;
-            user-select: none;
-          }
-
-          @media (min-width: 768px) {
-            .bd-placeholder-img-lg {
-              font-size: 3.5rem;
-            }
-          }
         </style>
         <script>
             function WaitForMasseage() {
