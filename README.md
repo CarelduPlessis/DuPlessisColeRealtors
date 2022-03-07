@@ -14,6 +14,11 @@ I made the forms look more modern and profesional.
 I will continue to make improvements and Test the website for bugs.
 
 
+<h2> How to login </h2>
+
+You can use the Dummy Users and Dummy Admin login information to login to the website.
+
+You can find the Dummy Users / Dummy Admin information (Username and passwords and the hashed Password) in the Documentation file.
 
 * Dummy User
 
