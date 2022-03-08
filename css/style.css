@@ -4,6 +4,17 @@
   padding: 0px;
 }
 
+body {
+  padding-top: 0px;
+}
+
+.avatarImage {
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  padding: 5px;
+}
+
 .footer-links-container {
   display: flex;
   align-items: center;
@@ -31,6 +42,15 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
   background-color: #45a049;
+}
+
+.link,
+.link:visited,
+.link:hover,
+.link:active,
+.link:link {
+  color: gray;
+  text-decoration: none;
 }
 
 input[type="text"],

@@ -63,7 +63,7 @@ $Property_id = $_GET['property_id']; // get the delnews from URL via address bar
         //header("Location: index.php");// login page/index page
 
         echo '<script type="text/javascript">';
-        echo "  window.location.href = 'index.php'";
+        echo "  window.location.href = '../index.php'";
         echo '</script>';
 
 

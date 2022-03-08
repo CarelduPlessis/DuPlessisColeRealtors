@@ -3,15 +3,15 @@
 if(isset($_COOKIE['admin'])){ // is player logged in??  
 ?> 
     <?php 
-    include '../include/head_admin.php'; //Include admin header
-    include("../database/config.php"); //Include database connections
+    include '../../include/head_admin.php'; //Include admin header
+   // include("../../database/config.php"); //Include database connections
 
 
                  $Property_id = $_GET['property_id']; // get the property id from URL via address bar      
 
                 // if form is Posted then run code below
                 if($_SERVER['REQUEST_METHOD'] == 'POST'){ //Handle the form. //Check whether the form has been submitted:
-                    $dir = "../img/property/"; // move to directory
+                    $dir = "../../img/property/"; // move to directory
 
                     $Store_dir = "img/property/"; // Store the directory path in database with filepath
 
@@ -99,7 +99,15 @@ if(isset($_COOKIE['admin'])){ // is player logged in??
         <title>Du Plessis Cole Realtors - Add Property Image</title> 
         <meta charset="utf-8">
             <meta http-equiv="X-UA-Compatible" content="IE=edge">
-            <meta name="viewport" content="width=device-width, initial-scale=1">
+
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round">
+            <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+            <link rel="stylesheet" href="style.css">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+            <script src="ajax/ajax.js"></script>
 
         <style>
         input[type="submit"] {
@@ -135,7 +143,7 @@ if(isset($_COOKIE['admin'])){ // is player logged in??
                             <p><strong>Note:</strong> Only .jpg, .jpeg, .gif, .png formats allowed to a max size of 5 MB.</p>
                             <input type="submit" name="PropImgUpload" value="Upload Image">
                             </br>
-                            <a href="../admin/display_properties.php" class="back-btn-link" style="color:#333740">Go Back</a>
+                            <a href="display_properties.php" class="back-btn-link" style="color:#333740">Go Back</a>
                         </form>
                 </div>
             </div><!-- End of container and upload property image -->
@@ -153,7 +161,7 @@ if(isset($_COOKIE['admin'])){ // is player logged in??
         //https://stackoverflow.com/questions/21226166/php-header-location-redirect-not-working/21226707
 
         // now it needs to work after covering the entire page in a if statment checking if admin is logged in
-        header("Location: index.php");// login page/index page
+        header("../Location: index.php");// login page/index page
 
 
         //back up plan

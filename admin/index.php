@@ -146,7 +146,7 @@
                             // 'Force' the cookie to exists
                             $_COOKIE['admin'] = $adminID;
 
-                            header('Location: ../admin/display_properties.php'); //Go to home/index page
+                            header('Location: ../admin/CRUD_Properties/display_properties.php'); //Go to home/index page
                             
                         }else if($validate_Input == "TRUE" && $IsAdmin_loggedIn == "TRUE"){ // otherwise if user input is valid / exists but user is logged in then run code below 
                             //display warning message 

@@ -29,7 +29,7 @@
 		<meta charset= "utf-8"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>         
     <!-- CSS file -->
-    <link rel="stylesheet" type="text/css" href="css/stylesheet.css?v=5"></link>
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css?v=6"></link>
 
 	</head>
 	  <body>
@@ -90,7 +90,7 @@
                     <li class="nav-item active dropdown" class="ml-auto">
                       <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" >
                       
-                      <img src="<?php echo $UserAvatar ?>" style="border-radius:50%; width:60px; height:60px; padding:5px;">Account</a>
+                      <img src="<?php echo $UserAvatar ?>" class="avatarImage">Account</a>
                         <div class="dropdown-menu">
                             <a class="dropdown-item" href="display_wishlist.php">Wishlist</a>
                             <a class="dropdown-item" href="User_Account.php">Account</a>

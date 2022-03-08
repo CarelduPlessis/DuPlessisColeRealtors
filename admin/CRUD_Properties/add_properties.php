@@ -3,9 +3,9 @@
 if(isset($_COOKIE['admin'])){ // is admin logged in??  
 ?> 
     <?php 
-    include '../include/head_admin.php'; // Include admin header
+    include '../../include/head_admin.php'; // Include admin header
 
-    include("../database/config.php"); // Include database connections
+    //include("../../database/config.php"); // Include database connections
     ?>
 
     <!doctype html>
@@ -368,7 +368,7 @@ if(isset($_COOKIE['admin'])){ // is admin logged in??
                         <br>
                         <div class="row">
                             
-                            <a href="../admin/display_properties.php" class="back-btn-link" style="color:#333740">Go Back</a>
+                            <a href="display_properties.php" class="back-btn-link" style="color:#333740">Go Back</a>
                         </div>
                     </form>
                 </div>
@@ -387,7 +387,7 @@ if(isset($_COOKIE['admin'])){ // is admin logged in??
         //https://stackoverflow.com/questions/21226166/php-header-location-redirect-not-working/21226707
 
         // now it needs to work after covering the entire page in a if statment checking if admin is logged in
-        header("Location: index.php");// login page/index page
+        header("../Location: index.php");// login page/index page
 
 
         //back up plan

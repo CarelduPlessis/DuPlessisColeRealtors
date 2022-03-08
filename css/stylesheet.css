@@ -1,131 +1,135 @@
-.warning {
-    border: 2px solid #f39389;
-    border-radius: 2px;
-    padding: 10px;
-    position: absolute;
-    background-color: #fbd8d4;
-    color: #3b3c40;
-    z-index: 1;
+.avatarImage {
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  padding: 5px;
 }
 
+.warning {
+  border: 2px solid #f39389;
+  border-radius: 2px;
+  padding: 10px;
+  position: absolute;
+  background-color: #fbd8d4;
+  color: #3b3c40;
+  z-index: 1;
+}
 
+/*bootstrap styling starts*/
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
 
- /*bootstrap styling starts*/
-    .bd-placeholder-img {
-      font-size: 1.125rem;
-      text-anchor: middle;
-      -webkit-user-select: none;
-      -moz-user-select: none;
-      -ms-user-select: none;
-      user-select: none;
-    }
-
-    @media (min-width: 768px) {
-      .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-          }
-      }
-    /*bootstrap styling ends*/
-    
-
-  .link, .link:visited, .link:hover, .link:active, .link:link{ color: gray; text-decoration: none;}
-
-
-
-    /* On screens that are 992px wide or less */
-    @media screen and (max-width: 992px) {
-    .card_body {
-        width: 60%;
-        height: auto;
-      }
-    }
-
-    /* Responsive for tablets/ipads */ /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
-    @media (min-width:641px)  { 
-    .card_body {
-      width:60%;
-      height:auto;
-      }    
-    }
-
-    /* Responsive for phones */
-    @media screen and (max-width: 600px) {
-    .myColumn {
-        width: 100%;
-        display: block;
-        align-content: center;
-      }
-    }
-    
-    /* Float cards one after another */
-    .myColumn {
-      position: relative;
-      left: 18%;
-      right: 8%;
-      padding: 0 10px;
-      max-width: 800px;
-    }
-
-    .banner { /*styling for the banner to introduce the page*/
-      max-width: 100%;
-      height: auto;
-    }
-
-    /*Give the achor tage with this class the color gray and remove underline in all events.*/
-  .link, .link:visited, .link:hover, .link:active, .link:link { 
-      color: gray; 
-      text-decoration: none;
-    }
-    
-  /* Remove extra left and right margins, due to padding */
-  .myRow {
-     position: relative;
-     right: 35%;
-     left: 23%;
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
   }
-  
-  /* Clear floats after the columns */
-  .myRow:after {
-    content: "";
-    display: table;
-    clear: both;
-            }
+}
+/*bootstrap styling ends*/
 
-  ul.houseSpec > li{ /*style the list of the icons on the property cards*/
-      display: inline-block;
+/* On screens that are 992px wide or less */
+@media screen and (max-width: 992px) {
+  .card_body {
+    width: 60%;
+    height: auto;
   }
-  
-  /* Style the counter cards */
-  .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    padding: 16px;
-    background-color: #f1f1f1;
-  }
+}
 
-.filter_style { /* Style for the filter of the property*/
+/* Responsive for tablets/ipads */ /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+@media (min-width: 641px) {
+  .card_body {
+    width: 60%;
+    height: auto;
+  }
+}
+
+/* Responsive for phones */
+@media screen and (max-width: 600px) {
+  .myColumn {
+    width: 100%;
+    display: block;
+    align-content: center;
+  }
+}
+
+/* Float cards one after another */
+.myColumn {
+  position: relative;
+  left: 18%;
+  right: 8%;
+  padding: 0 10px;
+  max-width: 800px;
+}
+
+.banner {
+  /*styling for the banner to introduce the page*/
+  max-width: 100%;
+  height: auto;
+}
+
+/*Give the achor tage with this class the color gray and remove underline in all events.*/
+.link,
+.link:visited,
+.link:hover,
+.link:active,
+.link:link {
+  color: gray;
+  text-decoration: none;
+}
+
+/* Remove extra left and right margins, due to padding */
+.myRow {
+  position: relative;
+  right: 35%;
+  left: 23%;
+}
+
+/* Clear floats after the columns */
+.myRow:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+ul.houseSpec > li {
+  /*style the list of the icons on the property cards*/
+  display: inline-block;
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  background-color: #f1f1f1;
+}
+
+.filter_style {
+  /* Style for the filter of the property*/
   position: relative;
   right: 25%;
   left: 25%;
 }
 
-
 /* navigation buttons between  property pages */
-.pagenumber-btn{ 
-    position: relative;
-    right: 45%;
-    left: 42%;
- }
+.pagenumber-btn {
+  position: relative;
+  right: 45%;
+  left: 42%;
+}
 
-
-
- /******************************************
+/******************************************
 
    Contact Us Page
 
  ******************************************/
 
- /* Style the container/contact section */
- .contactUs-container {
+/* Style the container/contact section */
+.contactUs-container {
   border-radius: 5px;
   background-color: #f2f2f2;
   padding: 10px;
@@ -145,8 +149,6 @@
   display: table;
   clear: both;
 }
-
-
 
 /******************************************
 
@@ -174,7 +176,7 @@
   padding-right: 15%;
 }
 
-ul.agent-details > li{
+ul.agent-details > li {
   display: inline-block;
 }
 

@@ -3,9 +3,9 @@
 if(isset($_COOKIE['admin'])){ // is admin logged in??  
 ?> 
     <?php 
-    include '../include/head_admin.php'; // Include admin header
+    include '../../include/head_admin.php'; // Include admin header
 
-    include("../database/config.php"); // Include database connections
+    //include("../../database/config.php"); // Include database connections
     ?>
 
     <!doctype html>
@@ -437,7 +437,7 @@ if(isset($_COOKIE['admin'])){ // is admin logged in??
                         </div>
                         <br>
                         <div class="row">
-                            <a href="../admin/display_properties.php" class="back-btn-link" style="color:#333740">Go Back</a>
+                            <a href="display_properties.php" class="back-btn-link" style="color:#333740">Go Back</a>
                         </div>
                     </form>
 
@@ -556,7 +556,7 @@ if(isset($_COOKIE['admin'])){ // is admin logged in??
         //echo "<script type='text/javascript'>location.href = 'index.php';</script>"; // login page/index page
 
         echo '<script type="text/javascript">';
-        echo "  window.location.href = 'index.php'";
+        echo "  window.location.href = '../index.php'";
         echo '</script>';
 
 }

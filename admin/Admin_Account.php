@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="en">
   <head>
@@ -7,31 +6,31 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Jekyll v3.8.5">
-    <title>Du Plessis Cole Realators - User Account</title>
+    <title>Du Plessis Cole Realators - Admin Account</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/sign-in/">
 
     <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="../css/bootstrap.css" rel="stylesheet">
     
      <!-- Favicon image -->
-        <link rel="icon" href="img/Favicon/Favicon.ico" type="favicon/ico" sizes="16x16">
-        <link rel="apple-touch-icon" sizes="57x57" href="img/Favicon/apple-icon-57x57.png">
-        <link rel="apple-touch-icon" sizes="60x60" href="img/Favicon/apple-icon-60x60.png">
-        <link rel="apple-touch-icon" sizes="72x72" href="img/Favicon/apple-icon-72x72.png">
-        <link rel="apple-touch-icon" sizes="76x76" href="img/Favicon/apple-icon-76x76.png">
-        <link rel="apple-touch-icon" sizes="114x114" href="img/Favicon/apple-icon-114x114.png">
-        <link rel="apple-touch-icon" sizes="120x120" href="img/Favicon/apple-icon-120x120.png">
-        <link rel="apple-touch-icon" sizes="144x144" href="img/Favicon/apple-icon-144x144.png">
-        <link rel="apple-touch-icon" sizes="152x152" href="img/Favicon/apple-icon-152x152.png">
-        <link rel="apple-touch-icon" sizes="180x180" href="img/Favicon/apple-icon-180x180.png">
-        <link rel="icon" type="image/png" sizes="192x192"  href="img/Favicon/android-icon-192x192.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="img/Favicon/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="96x96" href="img/Favicon/favicon-96x96.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="img/Favicon/favicon-16x16.png">
-        <link rel="manifest" href="img/Favicon/manifest.json">
+        <link rel="icon" href="../img/Favicon/Favicon.ico" type="favicon/ico" sizes="16x16">
+        <link rel="apple-touch-icon" sizes="57x57" href="../img/Favicon/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="../img/Favicon/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="../img/Favicon/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="../img/Favicon/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="../img/Favicon/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="../img/Favicon/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="../img/Favicon/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="../img/Favicon/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="../img/Favicon/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="../img/Favicon/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../img/Favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="../img/Favicon/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../img/Favicon/favicon-16x16.png">
+        <link rel="manifest" href="../img/Favicon/manifest.json">
         <meta name="msapplication-TileColor" content="#ffffff">
-        <meta name="msapplication-TileImage" content="img/Favicon/ms-icon-144x144.png">
+        <meta name="msapplication-TileImage" content="../img/Favicon/ms-icon-144x144.png">
         <meta name="theme-color" content="#ffffff">  
 
 
@@ -57,68 +56,68 @@
 
     
     <!-- My styles for this template -->
-    <link href="css/stylesheet.css" rel="stylesheet">
+    <link href="../css/stylesheet.css" rel="stylesheet">
     
     <!-- Custom styles for this template -->
-    <link href="css/SignUp.css" rel="stylesheet">
+    <link href="../css/SignUp.css" rel="stylesheet">
     
   </head>
     <body class="text-center">
          <?php 
-            include("database/config.php");  //Include database connections
+            include("../database/config.php");  //Include database connections
             
-            if(!isset($_COOKIE['user'])){
+            if(!isset($_COOKIE['admin'])){
                 header('Location: index.php'); //Go to home/index page
             }
          
             if($_SERVER['REQUEST_METHOD'] == 'POST'){ // Handle the form. 
                           
                 if (isset($_POST['updateAccount'])) { 
-                    $userExists = FALSE; // does the user exists in the table 
+                    $adminExists = FALSE; // does the user exists in the table 
 
-                    $User_Name = $_POST['User_Name']; // get User Name from the form using the POST method and then store it in variable called $User_Name
+                    $Admin_Name = $_POST['Admin_Name']; // get User Name from the form using the POST method and then store it in variable called $User_Name
 
                     $Password = $_POST['Password']; // get password from the form using the POST method and then store it in variable called $Password  
 
                     $Email = $_POST['Email']; // get email from the form using the POST method and then store it in variable called $Email 
 
-                    $UserAvatar = "img/avatar/default-avatar2.png"; // default Avatar
+                    $UserAvatar = "../img/avatar/default-avatar2.png"; // default Avatar
 
-                    $IsUser_loggedIn = "TRUE"; // is the user logged in
+                    $IsAdmin_loggedIn = "TRUE"; // is the user logged in
 
-                    $dir = "img/avatar/users/"; // file directory to store images
+                    $dir = "../img/avatar/admin/"; // file directory to store images
 
                     $entryExists = FALSE; // does the input value match any of the values in the database
 
-                    $query = 'SELECT * FROM user_tb ORDER BY User_id ASC'; // build query // Select all user from the table
+                    $query = 'SELECT * FROM admin_tb ORDER BY Admin_id ASC'; // build query // Select all user from the table
 
                     //Display colum name for each row that i have hard coded $row['colum name']                                                                 
                     if($r = mysqli_query($dbc, $query)){ // Run the Query.                                                                                     
                         // Retrieve and print every record:                                                                                                                                     
                         while($row = mysqli_fetch_array($r)){ // sort query in rows    
                             // check if user Exists
-                            if (($row['UserName'] == $_POST['User_Name_Old']) AND ($row['UserPassword'] == md5(trim($_POST['Password_Old']))) AND ($row['UserEmail'] == $_POST["Email_Old"])){
+                            if (($row['AdminName'] == $_POST['Admin_Name_Old']) AND ($row['AdminPassword'] == md5(trim($_POST['Password_Old']))) AND ($row['AdminEmail'] == $_POST["Email_Old"])){
 
-                                $userExists = TRUE; // Correct username/password combination.
+                                $adminExists = TRUE; // Correct username/password combination.
 
-                                $userID = $row['User_id']; // get id from database
+                                $adminID = $row['Admin_id']; // get id from database
 
                                 // Stop looping through the file:
                                // break;
                             }
                             
                             //new User Name can't Exist in the database (excluding himself)
-                            if(($row['User_id'] != $_COOKIE['user']) AND ($row['UserName'] == $_POST['User_Name'])){
+                            if(($row['Admin_id'] != $_COOKIE['admin']) AND ($row['AdminName'] == $_POST['Admin_Name'])){
                                 $entryExists = TRUE;
                             } 
                             
                             //new Password can't Exist in the database (excluding himself)
-                            if(($row['User_id'] != $_COOKIE['user']) AND ($row['UserPassword'] == md5(trim($_POST['Password'])))){
+                            if(($row['Admin_id'] != $_COOKIE['admin']) AND ($row['AdminPassword'] == md5(trim($_POST['Password'])))){
                                 $entryExists = TRUE;
                             }
                             
                             //new UserEmail can't Exist in the database (excluding himself)
-                            if(($row['User_id'] != $_COOKIE['user'])  AND ($row['UserEmail'] == $_POST["Email"])){
+                            if(($row['Admin_id'] != $_COOKIE['admin'])  AND ($row['AdminEmail'] == $_POST["Email"])){
                                 $entryExists = TRUE;
                             }
                             
@@ -129,7 +128,7 @@
                     
                    
 
-                    if($userExists == TRUE && $entryExists == FALSE){ // If the user does Exists and his new details don't Exist then update user
+                    if($adminExists == TRUE && $entryExists == FALSE){ // If the user does Exists and his new details don't Exist then update user
 
                         $Pass = md5($Password); // hash password
                         
@@ -169,7 +168,7 @@
                                     $UserAvatar = $dir.basename($image);
                                     
                                     //build quary
-                                    $query_UPDATE = "UPDATE user_tb SET UserName='$User_Name',UserPassword='$Pass',UserEmail='$Email',UserAvatar='$UserAvatar',IsUser_loggedIn='$IsUser_loggedIn' WHERE User_id=$userID";
+                                    $query_UPDATE = "UPDATE admin_tb SET AdminName='$Admin_Name',AdminPassword='$Pass',AdminEmail='$Email',AdminAvatar='$AdminAvatar',IsAdmin_loggedIn='$IsAdmin_loggedIn' WHERE Admin_id=$adminID";
                                     
                                     // Execute the query:
                                     if(@mysqli_query($dbc, $query_UPDATE)){
@@ -199,7 +198,7 @@
                                               $UserAvatar = $dir.basename($image);
 
                                               //build query
-                                              $query_UPDATE = "UPDATE user_tb SET UserName='$User_Name',UserPassword='$Pass',UserEmail='$Email',UserAvatar='$UserAvatar',IsUser_loggedIn='$IsUser_loggedIn' WHERE User_id=$userID";
+                                              $query_UPDATE = "UPDATE admin_tb SET AdminName='$Admin_Name',AdminPassword='$Pass',AdminEmail='$Email',AdminAvatar='$AdminAvatar',IsAdmin_loggedIn='$IsAdmin_loggedIn' WHERE Admin_id=$adminID";
                                                  
                                             // Execute the query:
                                         if(@mysqli_query($dbc, $query_UPDATE)){
@@ -245,8 +244,8 @@
                     <input type="file" name="photo" id="fileSelect">
                     <br>
                     <br>
-                    <label for="User_Name_Old" class="sr-only">Current User Name </label>
-                    <input type="text" id="User_Name_Old" name="User_Name_Old" class="form-control" placeholder="Enter in your current User Name" required autofocus>
+                    <label for="Admin_Name_Old" class="sr-only">Current User Name </label>
+                    <input type="text" id="Admin_Name_Old" name="Admin_Name_Old" class="form-control" placeholder="Enter in your current User Name" required autofocus>
 
                     <label for="Email_Old" class="sr-only">Current Email address </label>
                     <input type="email" id="Email_Old" name="Email_Old" class="form-control" placeholder="Enter in your current Email address" required>
@@ -254,8 +253,8 @@
                     <label for="Password_Old" class="sr-only">Current Password </label>
                     <input type="password" id="Password_Old" name="Password_Old" class="form-control" placeholder="Enter in your current password" required>
                     
-                    <label for="User_Name" class="sr-only">New User Name </label>
-                    <input type="text" id="User_Name" name="User_Name" class="form-control" placeholder="Enter in your New User Name" required autofocus>
+                    <label for="Admin_Name" class="sr-only">New User Name </label>
+                    <input type="text" id="Admin_Name" name="Admin_Name" class="form-control" placeholder="Enter in your New User Name" required autofocus>
 
                     <label for="Email" class="sr-only">New Email address</label>
                     <input type="email" id="Email" name="Email" class="form-control" placeholder="Enter in your New Email address" required>
@@ -268,7 +267,7 @@
 
                     <input class="btn btn-lg btn-primary btn-block" type="submit" id="updateAccount" value="Update Profile" name="updateAccount" > 
                     <br>
-                    <a href="index.php">Go Back</a>
+                    <a href="../admin/CRUD_Properties/display_properties.php">Go Back</a>
  
             <p class="mt-5 mb-3 text-muted">&copy; 2019</p>
         </form>
@@ -283,7 +282,7 @@
             //validate function
             function validation_SignUpForm(event){
                
-                var UserName = document.getElementById('User_Name'); // get User Name value by id and store value in variable
+                var AdminName = document.getElementById('Admin_Name'); // get User Name value by id and store value in variable
               
                 if(UserName.value == "undefined" || UserName.value == null || UserName.value == ""){ // check if User Name field is empty. if empty then stop posting form and send user a warning message
                     displayWarning("Entering an User Name is necessary!", UserName);
@@ -361,10 +360,6 @@
                 }    
                return true;
             }
- 
         </script>
-         
     </body>
 </html>
-
-

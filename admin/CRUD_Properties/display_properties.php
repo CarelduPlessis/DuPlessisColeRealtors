@@ -3,10 +3,11 @@ if(isset($_COOKIE['admin'])){	// is player logged in??
 ?>
 
     <?php
-    include '../database/config.php'; // include the database conncetion
+    //include '../../database/config.php'; // include the database conncetion
 
     $page_title = "display_properties";
-    include '../include/head_admin.php'; ?>
+
+    include '../../include/head_admin.php'; ?>
 
     <!DOCTYPE html>
     <html lang="en">
@@ -116,12 +117,12 @@ if(isset($_COOKIE['admin'])){	// is player logged in??
                                                         data-id="<?php echo $row["Property_id"]; ?>"
                                                         data-PropertyName="<?php echo $row["PropertyName"]; ?>"
                                                         data-Brief="<?php echo $row["Brief"]; ?>"
-                                                        title="Edit"><td><a href="edit_properties.php?property_id=<?php echo $row["Property_id"];?>" title="edit properties"><img src="../img/icons/button_edit.png" width="40" border="0"></a></td>
+                                                        title="Edit"><td><a href="edit_properties.php?property_id=<?php echo $row["Property_id"];?>" title="edit properties"><img src="../../img/icons/button_edit.png" width="40" border="0"></a></td>
                                                 </i>
                                             </a>
-                                            <td border="0"><a href="DeleteProperty.php?property_id=<?php echo $row["Property_id"];?>" title="Delete Property"><img src="../img/icons/button_delete.png" width="40" ></a></td>                                           
-                                            <td><a href="AddAgent.php?property_id=<?php echo $row["Property_id"];?>" title="Add Agent"><img src="../img/icons/button_add.png" width="40" ></a></td>
-                                            <td border="0"><a href="AddPropertyImg.php?property_id=<?php echo $row["Property_id"];?>" title="Add Property Image"><img src="../img/icons/button_add.png" width="40" ></a></td>
+                                            <td border="0"><a href="DeleteProperty.php?property_id=<?php echo $row["Property_id"];?>" title="Delete Property"><img src="../../img/icons/button_delete.png" width="40" ></a></td>                                           
+                                            <td><a href="AddAgent.php?property_id=<?php echo $row["Property_id"];?>" title="Add Agent"><img src="../../img/icons/button_add.png" width="40" ></a></td>
+                                            <td border="0"><a href="AddPropertyImg.php?property_id=<?php echo $row["Property_id"];?>" title="Add Property Image"><img src="../../img/icons/button_add.png" width="40" ></a></td>
                                         </td>
                                     </tr><!-- End of table row -->				
                                 <?php				
@@ -131,6 +132,7 @@ if(isset($_COOKIE['admin'])){	// is player logged in??
                 </table> <!-- End of table -->
             </div><!-- table-wrapper -->
         </div><!-- container -->
+        <br><br>
     </body>
     </html> 
 
@@ -142,7 +144,7 @@ if(isset($_COOKIE['admin'])){	// is player logged in??
 //https://stackoverflow.com/questions/21226166/php-header-location-redirect-not-working/21226707
     
 // now it needs to work after covering the entire page in a if statment checking if admin is logged in
-header("Location: index.php");// login page/index page
+header("Location: ../index.php");// login page/index page
   
 
 //back up plan

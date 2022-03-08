@@ -4,7 +4,7 @@ if(isset($_COOKIE['admin'])){ // is player logged in??
 ?> 
     <?php 
     include '../include/head_admin.php'; //Include admin header
-    include ("../database/config.php"); //Include database connections
+   // include ("../database/config.php"); //Include database connections
 
                  $Property_id = $_GET['property_id']; // get the delnews from URL via address bar   
 

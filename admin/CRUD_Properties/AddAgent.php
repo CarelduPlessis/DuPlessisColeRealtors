@@ -3,8 +3,8 @@
 if(isset($_COOKIE['admin'])){ // is player logged in??  
 ?> <!-- This page Add Agent -->
     <?php    
-        include '../include/head_admin.php'; //Include admin header
-        include("../database/config.php"); //Include database connections
+        include '../../include/head_admin.php'; //Include admin header
+       // include("../../database/config.php"); //Include database connections
 
         // Retreive query sting property_id from URL 
         $Property_id = intval($_GET['property_id']);
@@ -46,8 +46,16 @@ if(isset($_COOKIE['admin'])){ // is player logged in??
         <meta charset="utf-8" />
         <title>Du Plessis Cole Realtors - Add Agent to Property</title> 
         <meta charset="utf-8">
-            <meta http-equiv="X-UA-Compatible" content="IE=edge">
-            <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round">
+            <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+            <link rel="stylesheet" href="style.css">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+            <script src="ajax/ajax.js"></script>
 
         <style>
             .SelectAgent {
@@ -96,6 +104,10 @@ if(isset($_COOKIE['admin'])){ // is player logged in??
                         <div class="row">
                             <input type="submit"  id="Submit" name="AddAgent" value="Add Agent to Property" class="btn btn-lg">
                         </div>
+                        </br>
+                        <div class="row">
+                            <a href="display_properties.php" class="back-btn-link" style="color:#333740">Go Back</a>
+                        </div>
                     </form>  
             </div><!-- End of container and upload property image -->
             </main>
@@ -112,7 +124,7 @@ if(isset($_COOKIE['admin'])){ // is player logged in??
         //https://stackoverflow.com/questions/21226166/php-header-location-redirect-not-working/21226707
 
         // now it needs to work after covering the entire page in a if statment checking if admin is logged in
-        header("Location: index.php");// login page/index page
+        header("../Location: index.php");// login page/index page
 
         //back up plan
         // now you will work !!!!!!!!!!!! (fingers cross all the user have Javascript enabled) - hot fix for now
